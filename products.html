@@ -39,6 +39,16 @@
 
   
   <link rel="stylesheet" href="styles.css" />
+  <link rel="alternate" hreflang="zh-Hant-TW" href="https://kaidragon0815-design.github.io/yearfawn-website/products.html?lang=zh-TW" />
+  <link rel="alternate" hreflang="en" href="https://kaidragon0815-design.github.io/yearfawn-website/products.html?lang=en" />
+  <link rel="alternate" hreflang="ja" href="https://kaidragon0815-design.github.io/yearfawn-website/products.html?lang=ja" />
+  <link rel="alternate" hreflang="ko" href="https://kaidragon0815-design.github.io/yearfawn-website/products.html?lang=ko" />
+  <link rel="alternate" hreflang="fr" href="https://kaidragon0815-design.github.io/yearfawn-website/products.html?lang=fr" />
+  <link rel="alternate" hreflang="it" href="https://kaidragon0815-design.github.io/yearfawn-website/products.html?lang=it" />
+  <link rel="alternate" hreflang="es" href="https://kaidragon0815-design.github.io/yearfawn-website/products.html?lang=es" />
+  <link rel="alternate" hreflang="th" href="https://kaidragon0815-design.github.io/yearfawn-website/products.html?lang=th" />
+  <link rel="alternate" hreflang="vi" href="https://kaidragon0815-design.github.io/yearfawn-website/products.html?lang=vi" />
+  <link rel="alternate" hreflang="x-default" href="https://kaidragon0815-design.github.io/yearfawn-website/products.html" />
 </head><body data-page="products">
   <div class="ambient-grid" aria-hidden="true"></div>
 
@@ -56,13 +66,11 @@
 
       <nav class="main-nav" aria-label="Primary Navigation">
         <a href="index.html" class="nav-link" data-i18n="nav.home">首頁</a>
+        <a href="polymerization.html" class="nav-link" data-i18n="nav.polymer">上游聚合與產業鏈</a>
         <a href="products.html" class="nav-link nav-link-active" data-i18n="nav.products">DTY 產品與規格</a>
-        <a href="process-3d.html" class="nav-link nav-link-highlight">
-          <span class="pulse-dot"></span>
-          <span data-i18n="nav.process">3D 假撚製程模擬</span>
-        </a>
-        <a href="insights.html" class="nav-link" data-i18n="nav.insights">技術百科專欄</a>
-        <a href="facilities.html" class="nav-link" data-i18n="nav.facilities">雙廠區規模</a>
+        <a href="process-3d.html" class="nav-link nav-link-highlight"><span class="pulse-dot"></span><span data-i18n="nav.process">3D 假撚製程模擬</span></a>
+        <a href="insights.html" class="nav-link" data-i18n="nav.insights">技術百科與辭典</a>
+        <a href="facilities.html" class="nav-link" data-i18n="nav.facilities">雙廠區與典藏館</a>
         <a href="contact.html" class="nav-link" data-i18n="nav.contact">詢價／索取樣紗</a>
       </nav>
 
@@ -71,6 +79,9 @@
           <button class="lang-btn active" data-lang-btn="zh-TW">繁中</button>
           <button class="lang-btn" data-lang-btn="en">EN</button>
           <button class="lang-btn" data-lang-btn="ja">日本語</button>
+          <button class="lang-btn" data-lang-btn="ko">한국어</button>
+          <button class="lang-btn" data-lang-btn="fr">FR</button>
+          <button class="lang-btn" data-lang-btn="it">IT</button>
           <button class="lang-btn" data-lang-btn="es">ES</button>
           <button class="lang-btn" data-lang-btn="th">ไทย</button>
           <button class="lang-btn" data-lang-btn="vi">VI</button>
@@ -95,10 +106,11 @@
       </div>
       <div class="mobile-nav-links">
         <a href="index.html" class="mobile-nav-link" data-i18n="nav.home">首頁</a>
+        <a href="polymerization.html" class="mobile-nav-link" data-i18n="nav.polymer">上游聚合與產業鏈</a>
         <a href="products.html" class="mobile-nav-link mobile-nav-highlight" data-i18n="nav.products">DTY 產品與規格</a>
         <a href="process-3d.html" class="mobile-nav-link mobile-nav-highlight" data-i18n="nav.process">3D 假撚製程模擬</a>
-        <a href="insights.html" class="mobile-nav-link" data-i18n="nav.insights">技術百科專欄</a>
-        <a href="facilities.html" class="mobile-nav-link" data-i18n="nav.facilities">雙廠區規模</a>
+        <a href="insights.html" class="mobile-nav-link" data-i18n="nav.insights">技術百科與辭典</a>
+        <a href="facilities.html" class="mobile-nav-link" data-i18n="nav.facilities">雙廠區與典藏館</a>
         <a href="contact.html" class="mobile-nav-link" data-i18n="nav.contact">詢價／索取樣紗</a>
       </div>
       <div class="mobile-drawer-contact">
@@ -460,7 +472,422 @@
           </div>
         </div>
       </div>
-    </section></main>
+    </section>
+    <!-- 核心科學延伸：為何 POY 原絲必須經過「延伸假撚 (Draw Texturing)」才能變成 DTY 加工絲？ -->
+    <section class="section" id="why-poy-to-dty">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow" data-i18n="whydty.eyebrow">POLYMER PHYSICS & TEXTILE THERMODYNAMICS · 為何 POY 必須假撚成 DTY？</div>
+          <h2 class="section-title" data-i18n="whydty.title">為什麼 POY 原絲不能直接織布？從 POY 到 DTY 的六大高分子物理與織造工程蛻變</h2>
+          <p class="section-desc" data-i18n="whydty.desc">
+            許多採購與紡織初學者常問：「上游化纖廠抽出的 POY 原絲已經是連續聚酯長絲，為何還必須送到翊豐企業進行『延伸假撚（Draw Texturing）』加工變成 DTY？」答案深植於高分子結晶熱力學、流體力學與織造機械力學之中。我們結合雲端典藏之《南亞塑膠 POY 品質檢驗報告》與《翊豐企業 DTY 品質檢驗報告》實測數據，為您深度解密。
+          </p>
+        </div>
+
+        <div class="poy-dty-hero-split">
+          <div class="poy-dty-visual-box">
+            <img src="assets/gallery/poy-to-dty-micro-transformation.jpg" alt="POY 平直半延伸原絲轉化為 DTY 三維螺旋捲曲與空氣交絡節點微觀對照圖" loading="lazy" width="1200" height="675" />
+            <div class="savon-seal-caption">
+              <strong>圖 III：微米級結構蛻變 — 左側 POY 平行玻璃態原絲 vs 右側 DTY 三維螺旋捲曲與空氣噴節交絡節點（Knot）</strong>
+              <span>科學視覺說明：經 1.68x 同步熱拉伸、18,000 RPM 三軸摩擦加撚、210°C 氣相熱定型與高壓空氣交絡後之微米單絲形貌變態</span>
+            </div>
+          </div>
+
+          <div>
+            <span class="tech-tag tech-tag-cyan" style="margin-bottom:12px;display:inline-block;">AUTHENTIC LAB COA PROOF · 實測檢驗報告數據鐵證</span>
+            <h3 style="font-size:1.4rem;color:#ffffff;font-weight:800;margin-bottom:12px;line-height:1.35;">南亞 POY 原絲（Lot 42463） vs 翊豐鹿牌 DTY 成品紗（A 級品）實測物性躍遷</h3>
+            <p style="font-size:0.92rem;color:#cbd5e1;line-height:1.7;margin-bottom:16px;">
+              根據翊豐企業 2014–2015 雲端檔案室典藏之兩份真實檢驗報告（如下方博物館圖鑑 Plate II 與 Plate VIII 所示）：未經假撚之 POY 原絲斷裂伸度高達 <strong style="color:#f5d08a;">126%</strong>、斷裂強度僅 <strong style="color:#f5d08a;">3.05 g/den</strong>，一旦受熱或受力即劇烈拉長變形；經翊豐日本村田 33H 假撚機延伸定型為 DTY 後，斷裂強度躍升 55% 達 <strong style="color:#38bdf8;">4.72 g/den</strong>，伸度精準收斂至 <strong style="color:#38bdf8;">22.5%</strong>，並賦予 <strong style="color:#38bdf8;">24.3%</strong> 的立體捲曲伸縮復原率（Crimp Rigidity）！
+            </p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+              <div style="background:rgba(15,23,42,0.9);border:1px solid rgba(245,158,11,0.4);border-radius:12px;padding:14px;">
+                <div class="mono" style="font-size:0.72rem;color:#f5d08a;margin-bottom:4px;">UPSTREAM RAW POY (南亞實測)</div>
+                <div style="font-size:0.86rem;color:#e2e8f0;line-height:1.6;">
+                  • 斷裂強度：<strong>3.05 g/den</strong>（偏軟易拉斷）<br/>
+                  • 斷裂伸度：<strong>126.0 %</strong>（一拉即長、無法定型）<br/>
+                  • 沸水收縮率：<strong>50% – 60%</strong>（下水即縮皺崩解）<br/>
+                  • 捲曲復原率：<strong>0 %</strong>（筆直無彈性、塑膠感）<br/>
+                  • 含油率 OPU：<strong>0.20 %</strong>（不耐高速織機摩擦）
+                </div>
+              </div>
+              <div style="background:rgba(2,132,199,0.18);border:1px solid #38bdf8;border-radius:12px;padding:14px;">
+                <div class="mono" style="font-size:0.72rem;color:#38bdf8;margin-bottom:4px;">YEAR FAWN DTY (翊豐鹿牌實測)</div>
+                <div style="font-size:0.86rem;color:#ffffff;line-height:1.6;">
+                  • 斷裂強度：<strong>4.72 g/den</strong>（強韌耐高速織造）<br/>
+                  • 斷裂伸度：<strong>22.5 %</strong>（最佳織造彈性區間）<br/>
+                  • 沸水收縮率：<strong>< 3.5 %</strong>（染整後尺寸極度穩定）<br/>
+                  • 伸縮復原率：<strong>24.3 %</strong>（豐滿蓬鬆立體回彈）<br/>
+                  • 含油率 OPU：<strong>1.38 %</strong>（抗靜電、低摩擦平滑）
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 六大科學維度卡片 -->
+        <div class="poy-dty-6reasons-grid">
+          <div class="poy-reason-card">
+            <span class="poy-reason-num">DIMENSION 01 · 高分子結晶熱力學</span>
+            <h3 data-i18n="whydty.r1Title">結晶度倍增（22% → 52%）與消除 55% 沸水劇烈收縮</h3>
+            <p data-i18n="whydty.r1Desc">
+              POY 以 3,200 m/min 抽絲時僅具「預取向（Pre-orientation）」，結晶度僅 22%–28%，非晶區分子鏈呈鬆散捲曲狀。若直接織布投入 130°C 染缸，分子鏈會發生劇烈熵彈性回縮（沸水收縮率高達 50%–60%），使整匹布縮成硬塊。假撚機透過 DR 1.65–1.72x 同步熱拉伸與 210°C 熱箱結晶化，將結晶度推升至 48%–55%，使定型紗沸水收縮率降至 3.5% 以下。
+            </p>
+            <div class="poy-metric-compare">Crystallinity: 25% (POY) → 52% (DTY) | BWS: 55% → &lt; 3.5%</div>
+          </div>
+
+          <div class="poy-reason-card">
+            <span class="poy-reason-num">DIMENSION 02 · 流變穩定性與保存期</span>
+            <h3 data-i18n="whydty.r2Title">破除 POY「室溫物理老化（Physical Aging）」變質危機</h3>
+            <p data-i18n="whydty.r2Desc">
+              POY 內部非晶區處於熱力學非平衡亞穩態（ガラス轉移溫度 Tg 附近），在室溫倉庫存放超過 3 至 6 個月即會發生自發性冷結晶與應力鬆弛（物理老化），導致紗線變脆、強伸度劣化且染色吸色率隨存放時間劇烈改變。轉化為 DTY 後，分子晶格經高溫定型永久鎖固，可長期穩定倉儲與跨洲海運。
+            </p>
+            <div class="poy-metric-compare">Shelf Stability: 3–6 Months (POY) → Multi-Year Stable (DTY)</div>
+          </div>
+
+          <div class="poy-reason-card">
+            <span class="poy-reason-num">DIMENSION 03 · 幾何形貌與光學漫射</span>
+            <h3 data-i18n="whydty.r3Title">告別冰冷「塑膠極光與貼膚蠟感」，賦予天然羊毛棉感</h3>
+            <p data-i18n="whydty.r3Desc">
+              未假撚之長絲（POY/FDY）單絲如玻璃棒般筆直平行排列，織物表面會產生刺眼的鏡面塑膠反光（Plastic Glare），且緊貼流汗肌膚、毫無豐滿度。經過 18,000 RPM 假撚扭轉定型再解撚後，36F–144F 單絲呈現三維螺旋空間捲曲（3D Helical Crimp），光線產生溫潤漫反射，手感瞬間轉為豐厚、柔軟且具 24.3% 伸縮復原率。
+            </p>
+            <div class="poy-metric-compare">Geometry: 1D Flat Glassy Rod → 3D Helical Spring Crimp (CR 24.3%)</div>
+          </div>
+
+          <div class="poy-reason-card">
+            <span class="poy-reason-num">DIMENSION 04 · 微氣候與毛細流體力學</span>
+            <h3 data-i18n="whydty.r4Title">孔隙率躍升至 70%：冬季靜止空氣保暖 × 夏季毛細芯吸排汗</h3>
+            <p data-i18n="whydty.r4Desc">
+              平直原絲束內部緊密貼合，空隙率低於 15%。DTY 立體捲曲單絲之間撐開數百萬個微米級三維連通氣孔，使紗線孔隙率（Porosity）躍升至 60%–75%：在刷毛搖粒絨中能鎖住大量靜止空氣層（熱傳導率極低）實現輕量禦寒；在運動機能針織布中則形成「Washburn 毛細管負壓通道」，將體表汗水瞬間導出擴散蒸發。
+            </p>
+            <div class="poy-metric-compare">Yarn Porosity: &lt; 15% (Flat) → 65%–75% (Lofty DTY Micro-Channels)</div>
+          </div>
+
+          <div class="poy-reason-card">
+            <span class="poy-reason-num">DIMENSION 05 · 免上漿綠色織造工程</span>
+            <h3 data-i18n="whydty.r5Title">空氣噴節交絡（TA1–TA9）取代高污染 PVA 化學漿紗</h3>
+            <p data-i18n="whydty.r5Desc">
+              平直無撚原絲在高速整經與織造（800–1,200 RPM 噴水/噴氣織機）時，單絲極易因鋼筘與綜絲摩擦而分岔、起毛羽甚至斷經，傳統上必須耗費大量水電塗佈 PVA 化學漿料再退漿。DTY 於假撚機同步透過壓縮空氣噴嘴打上每米 40–120 個交絡節點（Knot），以物理集束抱合力徹底免除化學漿紗工序！
+            </p>
+            <div class="poy-metric-compare">Intermingling: 0 Nodes/m (POY) → 40–120 Nodes/m (TA1–TA9 Sizing-Free)</div>
+          </div>
+
+          <div class="poy-reason-card">
+            <span class="poy-reason-num">DIMENSION 06 · 染色動力學與一紗三態</span>
+            <h3 data-i18n="whydty.r6Title">均質化非晶區染座（M/K 4.5級）與定型/屋麗/噴節萬用分流</h3>
+            <p data-i18n="whydty.r6Desc">
+              聚酯屬疏水性結晶高分子，必須依賴分散染料（Disperse Dyes）在 130°C 高溫下滲入非晶區微孔上色。假撚機 ±0.3°C 精密熱歷史能重構均勻的非晶區微孔尺寸（杜絕經柳與橫條色差 Barre）；同時僅需切換一/二熱箱與超餵離合器，即可將同一種 POY 轉化為低收縮「定型紗」、高彈性「屋麗紗」或雙色竹節「噴節紗」。
+            </p>
+            <div class="poy-metric-compare">1 POY Feedstock → 3 Versatile DTY Families (Set / Woolly / Slub)</div>
+          </div>
+        </div>
+
+        <!-- POY vs FDY vs DTY vs ATY vs ACY/SCY 完整十項物性對照表 -->
+        <div class="spec-table-wrap">
+          <table class="spec-table">
+            <thead>
+              <tr>
+                <th>紗種分類與代號</th>
+                <th>製造工藝核心</th>
+                <th>單絲微觀形貌</th>
+                <th>斷裂強度 (g/d)</th>
+                <th>斷裂伸度 (%)</th>
+                <th>沸水收縮率 BWS</th>
+                <th>捲曲收縮率 CC%</th>
+                <th>核心優缺點與下游定位</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="mono"><strong>POY 半延伸原絲</strong><br/>(Partially Oriented)</td>
+                <td>3,200 m/min 高速熔融紡絲（未完全拉伸）</td>
+                <td>平行筆直、低結晶亞穩態（25%）</td>
+                <td class="mono">2.8 – 3.2<br/>(南亞實測 3.05)</td>
+                <td class="mono">110% – 135%<br/>(南亞實測 126%)</td>
+                <td class="mono">50% – 60%</td>
+                <td class="mono">0% (無捲曲)</td>
+                <td>❌ 不可直接織布（受熱劇烈收縮、3個月物理老化）；專供翊豐假撚機生產 DTY 之原料。</td>
+              </tr>
+              <tr>
+                <td class="mono"><strong>FDY 全延伸原絲</strong><br/>(Fully Drawn)</td>
+                <td>5,000 m/min 紡絲熱羅拉一體拉伸定型</td>
+                <td>平行筆直、高結晶緊密排列</td>
+                <td class="mono">4.2 – 5.2</td>
+                <td class="mono">22% – 35%</td>
+                <td class="mono">6% – 9%</td>
+                <td class="mono">0% (無捲曲)</td>
+                <td>具絲緞鏡面光澤與平滑感，但無蓬鬆度、無彈性且較貼膚；多用於塔夫塔內里或與 DTY 交織。</td>
+              </tr>
+              <tr style="background:rgba(56,189,248,0.09);">
+                <td class="mono"><strong>DTY 定型紗 (Set)</strong><br/>★ 翊豐主力 (75–300D)</td>
+                <td>POY + 1.68x 拉伸 + 18,000 RPM 假撚 + <strong>一熱箱 & 二熱箱雙重熱定型</strong></td>
+                <td>微幅三維螺旋捲曲、低扭矩高穩定</td>
+                <td class="mono"><strong>4.2 – 4.8</strong><br/>(翊豐實測 4.72)</td>
+                <td class="mono"><strong>18% – 25%</strong><br/>(翊豐實測 22.5%)</td>
+                <td class="mono"><strong>&lt; 3.5%</strong></td>
+                <td class="mono"><strong>8% – 14%</strong></td>
+                <td>✅ 兼具豐滿柔順手感與極致尺寸穩定度；高速平織（免上漿經緯紗）、高密圓編針織與高級織帶首選。</td>
+              </tr>
+              <tr style="background:rgba(56,189,248,0.09);">
+                <td class="mono"><strong>DTY 屋麗紗 (Woolly)</strong><br/>★ 翊豐主力 (150–300D)</td>
+                <td>POY + 同步拉伸假撚 + <strong>僅經第一熱箱（關閉第二熱箱）</strong></td>
+                <td>高振幅立體螺旋彈簧捲曲、極蓬鬆</td>
+                <td class="mono"><strong>4.0 – 4.6</strong></td>
+                <td class="mono"><strong>22% – 30%</strong></td>
+                <td class="mono"><strong>5% – 8%</strong></td>
+                <td class="mono"><strong>25% – 38%</strong></td>
+                <td>✅ 最高回彈伸縮性與仿羊毛蓬鬆度；刷毛搖粒絨、珊瑚絨、運動護具鬆緊帶、箱包織帶與織襪包芯首選。</td>
+              </tr>
+              <tr style="background:rgba(56,189,248,0.09);">
+                <td class="mono"><strong>DTY 噴節紗 (Slub)</strong><br/>★ 翊豐主力 (75–300D)</td>
+                <td>假撚變動超餵比 + 高壓間歇氣流交絡</td>
+                <td>縱向粗細竹節交替（未完全拉伸段+基紗）</td>
+                <td class="mono"><strong>3.4 – 4.1</strong></td>
+                <td class="mono"><strong>20% – 28%</strong></td>
+                <td class="mono"><strong>4% – 7%</strong></td>
+                <td class="mono"><strong>12% – 20%</strong></td>
+                <td>✅ 單浴染色即可呈現深淺雙色麻花（Melange）與天然亞麻竹節立體肌理；高單價休閒服、潮鞋與窗簾沙發布首選。</td>
+              </tr>
+              <tr>
+                <td class="mono"><strong>ATY 空氣變形紗</strong><br/>(Air-Textured Yarn)</td>
+                <td>超聲速壓縮空氣噴嘴（8–12 bar）吹亂單絲形成微毛圈</td>
+                <td>表面佈滿不規則微米絲圈（仿短纖棉麻）</td>
+                <td class="mono">3.0 – 3.6</td>
+                <td class="mono">15% – 22%</td>
+                <td class="mono">3% – 5%</td>
+                <td class="mono">5% – 10%</td>
+                <td>外觀最接近天然棉帆布（如 タスラン Taslan），但斷裂強度較 DTY 低約 25% 且耗氣成本高。</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 2012–2015 雲端典藏精修圖鑑博物館 & 互動式 DTY 五碼批號解碼器 -->
+    <section class="section" id="cloud-archive-museum">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow" data-i18n="arch.eyebrow">2012–2015 AUTHENTIC ARCHIVE MUSEUM & CITATIONS · 翊豐歷史檔案與文獻引用館</div>
+          <h2 class="section-title" data-i18n="arch.title">2012–2015 翊豐企業雲端典藏圖鑑館：真實生產履歷、檢驗報告與紡織文獻精修展列</h2>
+          <p class="section-desc" data-i18n="arch.desc">
+            歷史與專業來自真實走過的足跡。我們從翊豐企業 2012–2015 年間內部雲端硬碟《翊豐舊資料》檔案庫中，挖掘出珍貴的日本村田 33H 假撚機開機紀錄、五碼批號編立原則原件、南亞 POY 與翊豐 DTY 品質檢驗報告、德國 Itemat Lab 交絡測試圖譜及紡織研究中心梭織工程實景，經數位暗房高解析精修與雙框博物館裝裱，並完整標註每一幅圖檔之原始出處與學術引用（點擊任一圖板可放大檢視高解析全圖）。
+          </p>
+        </div>
+
+        <!-- 互動式 DTY 五碼批號解碼器 (100.3.7 規範) -->
+        <div class="batch-decoder-panel" id="batch-code-decoder">
+          <span class="tech-tag tech-tag-cyan" style="margin-bottom:10px;display:inline-block;">INTERACTIVE LOT CODE DECODER · 依據翊豐 100.3.7 典藏原件建構</span>
+          <h3 style="font-size:1.35rem;color:#ffffff;font-weight:800;margin-bottom:8px;">互動式「翊豐鹿牌 DTY 五碼批號解碼器（5-Digit Batch Code System）」</h3>
+          <p style="font-size:0.9rem;color:#cbd5e1;line-height:1.65;">
+            根據下方【典藏圖板 Plate I】線西廠品管室 2011–2013 年《DTY 批號設立編碼原則：5碼編立原則 (100.3.7)》原件，翊豐每一箱出貨的鹿牌 DTY 皆有一組 5 碼批號（如 <code>#A3201</code>、<code>#A3717</code>、<code>#L3733</code>）。請選擇下方四組編碼參數，即時解讀批號代表的完整工程規格：
+          </p>
+
+          <div class="decoder-controls">
+            <div class="decoder-select-group">
+              <label for="dec-code1">第一碼：單雙股・噴節・定型區分</label>
+              <select id="dec-code1" onchange="window.updateBatchDecoder && window.updateBatchDecoder()">
+                <option value="A" data-desc="單股輕噴紗 (Single-Ply SIM)">A — 單股輕噴紗 (SIM)</option>
+                <option value="B" data-desc="單股中噴紗 (Single-Ply MIM)">B — 單股中噴紗 (MIM)</option>
+                <option value="C" data-desc="單股重噴紗 (Single-Ply HIM 免漿級)">C — 單股重噴紗 (HIM)</option>
+                <option value="D" data-desc="單股定型紗 (Single-Ply Heat-Set)">D — 單股定型紗 (Set)</option>
+                <option value="E" data-desc="單股輕噴＋定型紗 (SIM + Set)" selected>E — 單股輕噴＋定型紗</option>
+                <option value="F" data-desc="單股中噴＋定型紗 (MIM + Set)">F — 單股中噴＋定型紗</option>
+                <option value="G" data-desc="單股重噴＋定型紗 (HIM + Set)">G — 單股重噴＋定型紗</option>
+                <option value="H" data-desc="單股 BR 大有光噴節紗 (Bright Slub/Interlaced)">H — 單股 BR 有光噴節紗</option>
+                <option value="I" data-desc="單股 BR 大有光定型紗 (Bright Set)">I — 單股 BR 有光定型紗</option>
+                <option value="J" data-desc="單股 TB 三角異形斷面有光紗 (Trilobal Bright)">J — 單股 TB 三角有光紗</option>
+                <option value="K" data-desc="單股 CD 陽離子易染噴節紗 (Cationic Dyeable)">K — 單股 CD 陽離子噴節紗</option>
+                <option value="L" data-desc="單股 CD 陽離子易染定型紗 (Cationic Set)">L — 單股 CD 陽離子定型紗</option>
+                <option value="M" data-desc="單股 BK 原液黑絲 (Dope-Dyed Black)">M — 單股 BK 原液黑紗</option>
+                <option value="N" data-desc="雙股 S+Z 無扭矩輕噴紗 (2-Ply Zero-Torque SIM)">N — 雙股無扭輕噴紗</option>
+                <option value="P" data-desc="雙股 S+Z 無扭矩中噴紗 (2-Ply Zero-Torque MIM)">P — 雙股無扭中噴紗</option>
+                <option value="Q" data-desc="雙股 S+Z 無扭矩重噴紗 (2-Ply Zero-Torque HIM)">Q — 雙股無扭重噴紗</option>
+                <option value="R" data-desc="雙股 S+Z 無扭矩定型紗 (2-Ply Zero-Torque Set)">R — 雙股無扭定型紗</option>
+                <option value="S" data-desc="SC 半消光＋陽離子雙色複合絲 (SD+CD)">S — SC (SD+CD 複合絲)</option>
+                <option value="T" data-desc="SBR 半消光＋大有光複合絲 (SD+BR)">T — SBR (SD+BR 複合絲)</option>
+                <option value="V" data-desc="SBK 半消光＋原液黑麻花複合絲 (SD+BK)">V — SBK (SD+BK 麻花絲)</option>
+              </select>
+            </div>
+
+            <div class="decoder-select-group">
+              <label for="dec-code2">第二碼：丹尼數 (Denier)</label>
+              <select id="dec-code2" onchange="window.updateBatchDecoder && window.updateBatchDecoder()">
+                <option value="1" data-den="30D">1 — 30 丹 (30D)</option>
+                <option value="2" data-den="50D">2 — 50 丹 (50D)</option>
+                <option value="3" data-den="75D">3 — 75 丹 (75D 主力)</option>
+                <option value="4" data-den="100D">4 — 100 丹 (100D 主力)</option>
+                <option value="5" data-den="150D" selected>5 — 150 丹 (150D 主力)</option>
+                <option value="6" data-den="300D">6 — 300 丹 (300D 主力)</option>
+                <option value="7" data-den="450D">7 — 450 丹 (450D)</option>
+                <option value="8" data-den="600D">8 — 600 丹 (600D 重磅)</option>
+              </select>
+            </div>
+
+            <div class="decoder-select-group">
+              <label for="dec-code3">第三碼：單絲條數 (Filaments)</label>
+              <select id="dec-code3" onchange="window.updateBatchDecoder && window.updateBatchDecoder()">
+                <option value="1" data-fil="24F">1 — 24 條 (24F)</option>
+                <option value="2" data-fil="36F">2 — 36 條 (36F)</option>
+                <option value="3" data-fil="48F" selected>3 — 48 條 (48F 主力)</option>
+                <option value="4" data-fil="72F">4 — 72 條 (72F 細丹尼)</option>
+                <option value="5" data-fil="96F">5 — 96 條 (96F 主力)</option>
+                <option value="6" data-fil="144F">6 — 144 條 (144F 超細微纖)</option>
+                <option value="7" data-fil="192F">7 — 192 條 (192F)</option>
+                <option value="8" data-fil="216F">8 — 216 條 (216F)</option>
+                <option value="9" data-fil="288F">9 — 288 條 (288F 極細微纖)</option>
+              </select>
+            </div>
+
+            <div class="decoder-select-group">
+              <label for="dec-code45">第四、五碼：流水號・等級與撚向</label>
+              <select id="dec-code45" onchange="window.updateBatchDecoder && window.updateBatchDecoder()">
+                <option value="01" data-grade="A 級正常品 (Z撚標準向, 鹿牌正常箱)" selected>01 — 流水號 01 (A級正常品・Z撚)</option>
+                <option value="19" data-grade="A 級正常品 (批號 19, 鹿牌正常箱)">19 — 流水號 19 (A級正常品・Z撚)</option>
+                <option value="0S" data-grade="S 撚向特殊指定紗 (Counter-Clockwise S-Twist)">0S — 尾碼 S (S撚向特殊指定紗)</option>
+                <option value="0B" data-grade="B 級副牌工業用紗 (貼除箱包裝)">0B — 尾碼 B (B級品・貼除箱)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="decoder-result-display">
+            <div>
+              <div class="mono" style="font-size:0.72rem;color:#7dd3fc;">GENERATED YEAR FAWN LOT CODE (翊豐五碼批號)：</div>
+              <div class="decoder-lot-code" id="dec-output-code">#E5301</div>
+            </div>
+            <div style="flex:1;min-width:260px;">
+              <div class="mono" style="font-size:0.72rem;color:#f5d08a;margin-bottom:4px;">DECODED SPECIFICATION & FACTORY NOTATION (批號完整工程解讀)：</div>
+              <div class="decoder-lot-meaning" id="dec-output-desc">生產規格：150D / 48F 單股輕噴＋定型紗 (SIM + Set) ｜ 品管等級：A 級正常品 (Z撚標準向, 鹿牌正常箱) ｜ 廠內報表簡記：150/48/1/Z</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 博物館 8 大精修歷史與技術圖板展示牆 -->
+        <div class="museum-gallery-grid">
+          <!-- Plate I -->
+          <article class="museum-plate-card">
+            <div class="museum-plate-img-wrap" onclick="window.openArchiveLightbox && window.openArchiveLightbox('assets/gallery/archive-dty-5code-system.jpg', 'ARCHIVAL PLATE I：《DTY 批號設立五碼編立原則表 (100.3.7)》｜典藏出處：翊豐企業線西廠品管室 2013 年原件')">
+              <img src="assets/gallery/archive-dty-5code-system.jpg" alt="翊豐企業 DTY 批號設立五碼編立原則表 (100.3.7) 2013 年品管室原件" loading="lazy" width="1400" height="920" />
+            </div>
+            <div class="museum-plate-body">
+              <span class="museum-plate-tag">ARCHIVAL PLATE I · YEAR FAWN QC STANDARD (2011–2013)</span>
+              <h3>《DTY 批號設立五碼編立原則表 (100.3.7)》線西廠品管室典藏原件</h3>
+              <p>完整定義翊豐企業單雙股、輕/中/重噴節、定型紗、有光（BR）、三角異形（TB）、陽離子（CD）、原液黑（BK）及丹尼數（30D–600D）、條數（24F–288F）與 S/Z 撚向之五碼溯源體系。</p>
+              <div class="citation-source-box">
+                <strong>圖檔來源與引用標註：</strong>翊豐企業股份有限公司線西廠品管室《DTY 批號設立編碼原則：5碼編立原則 (民國100年3月7日制定 / 2013年9月24日傳真建檔)》，出自使用者 Google 雲端硬碟《翊豐舊資料/專業-紗/中纖批號代號》原件數位暗房精修。
+              </div>
+            </div>
+          </article>
+
+          <!-- Plate II -->
+          <article class="museum-plate-card">
+            <div class="museum-plate-img-wrap" onclick="window.openArchiveLightbox && window.openArchiveLightbox('assets/gallery/archive-nanya-poy-coa.jpg', 'ARCHIVAL PLATE II：《南亞塑膠纖維事業部 POY 品質檢驗報告表 (2015)》｜典藏出處：南亞塑膠纖維事業部／翊豐企業 2015 原料入廠典藏')">
+              <img src="assets/gallery/archive-nanya-poy-coa.jpg" alt="南亞塑膠公司纖維事業部 POY 品質檢驗報告表 Certificate of Analysis (2015)" loading="lazy" width="1400" height="920" />
+            </div>
+            <div class="museum-plate-body">
+              <span class="museum-plate-tag">ARCHIVAL PLATE II · UPSTREAM POY COA (2015)</span>
+              <h3>《南亞塑膠纖維事業部 POY 品質檢驗報告表》入廠實測檔案</h3>
+              <p>實證上游半延伸原絲（POY Lot 42463）之標準物性：纖度 164.5 Den（標準 164.0 ± 2.0）、斷裂強度 3.05 g/den、斷裂伸度高達 126%（標準 126 ± 6%）、條幹均勻度 0.50%（≤ 0.80%）、油份 0.20%，呈現未假撚前高伸度低強度之物理特性。</p>
+              <div class="citation-source-box">
+                <strong>圖檔來源與引用標註：</strong>南亞塑膠工業股份有限公司纖維事業部（Nan Ya Plastics Corp. Fiber Division）《POY 品質檢驗報告表 Certificate of Analysis (2015/07/02)》，出自使用者雲端硬碟《翊豐舊資料/POY/南亞POY物性表.jpg》正位校正精修。
+              </div>
+            </div>
+          </article>
+
+          <!-- Plate VIII -->
+          <article class="museum-plate-card">
+            <div class="museum-plate-img-wrap" onclick="window.openArchiveLightbox && window.openArchiveLightbox('assets/gallery/archive-yearfawn-dty-coa.jpg', 'ARCHIVAL PLATE VIII：《翊豐企業 DTY 品質檢驗報告與日本村田 33H 假撚機生產履歷 (2012–2015)》')">
+              <img src="assets/gallery/archive-yearfawn-dty-coa.jpg" alt="翊豐企業 DTY 品質檢驗報告與日本村田 33H 假撚機生產履歷 (2012-2015)" loading="lazy" width="1400" height="920" />
+            </div>
+            <div class="museum-plate-body">
+              <span class="museum-plate-tag">ARCHIVAL PLATE VIII · MURATA 33H LOGS & DTY COA (2012–2015)</span>
+              <h3>《翊豐企業 DTY 品質檢驗報告與日本村田 33H 假撚機開機生產履歷》</h3>
+              <p>左欄展示翊豐 A 級 DTY 實測強度達 4.72 g/den、伸度 22.5%、油份 1.38%、伸縮復原率 24.3%；右欄彙整 2012–2014 年 H-1 至 H-6 台（日本村田 33H 假撚機）投料中纖、力麗、紡安 POY 生產 75D/36F、150D/48F、150D/144F、300D/96F「鹿牌」紙箱與色管防混批紀錄。</p>
+              <div class="citation-source-box">
+                <strong>資料來源與引用標註：</strong>彙編自翊豐企業股份有限公司 2012–2015 內部歷史檔案《翊豐DTY檢驗報告.doc》、《翊豐DTY檢驗報告1040123v1.doc》、《33H/33H開機日期單-0705.docx》、《33H/機台-12-14.docx》與《33H/零件資料-2014-10-26.docx》。
+              </div>
+            </div>
+          </article>
+
+          <!-- Murata 33H Hall -->
+          <article class="museum-plate-card">
+            <div class="museum-plate-img-wrap" onclick="window.openArchiveLightbox && window.openArchiveLightbox('assets/gallery/murata-33h-artisan-hall.jpg', '日本村田 Murata 33H Mach Crimper 高速延伸假撚機群（H-1 至 H-6 產線與色管管理系統）')">
+              <img src="assets/gallery/murata-33h-artisan-hall.jpg" alt="翊豐企業日本村田 Murata 33H 高速延伸假撚機群與紙管色標管理" loading="lazy" width="1200" height="675" />
+            </div>
+            <div class="museum-plate-body">
+              <span class="museum-plate-tag">ARTISAN TEXTURING HALL · MURATA 33H MACH CRIMPER LINES</span>
+              <h3>日本村田機械 Murata 33H 高速延伸假撚機群與「紙管色標防混批系統」</h3>
+              <p>重現翊豐線西一廠與鹿港二廠 H-1 至 H-6 高速假撚產線：採用台灣村田原廠電木軸心鋁座、33H-026 捲取滑塊、W 型磁導與 608-ZZ-C3 高速培林，並以黃、紫、紅、粉桔、寶藍等紙管顏色嚴格區分批號與丹尼規格。</p>
+              <div class="citation-source-box">
+                <strong>設備依據與引用標註：</strong>依據《翊豐舊資料/33H/機台-12-14.docx》與《零件資料-2014-10-26.docx》（台灣村田、凱鉅國際、漢元工業、怡中實業零件維護紀錄）進行視覺重構。
+              </div>
+            </div>
+          </article>
+
+          <!-- Plate III -->
+          <article class="museum-plate-card">
+            <div class="museum-plate-img-wrap" onclick="window.openArchiveLightbox && window.openArchiveLightbox('assets/gallery/archive-interlace-micrograph.jpg', 'ARCHIVAL PLATE III：《DTY 空氣噴節交絡節點 (Knot) 光學顯微圖與 TA5 / TA9 交絡牢度對照》')">
+              <img src="assets/gallery/archive-interlace-micrograph.jpg" alt="DTY 空氣噴節交絡節點 Knot 光學顯微圖與 TA5 / TA9 交絡牢度對照" loading="lazy" width="1400" height="920" />
+            </div>
+            <div class="museum-plate-body">
+              <span class="museum-plate-tag">ARCHIVAL PLATE III · INTERLACE MICROSCOPY & TA1–TA9 CODE</span>
+              <h3>《DTY 空氣噴節交絡節點（Knot）光學顯微照片與 TA5 / TA9 牢度解析》</h3>
+              <p>清晰展示聚酯加工絲經高壓空氣噴嘴（Air-Jet）衝擊後形成之點狀集束節點（Knot）與蓬鬆開纖腹段：150/48 TA5（交絡牢度 46–55%，節點較鬆弛，布面手感極度柔軟）vs 150/48 TA9（交絡牢度 86–95%，節點緊密不易解開，免上漿經紗專用）。</p>
+              <div class="citation-source-box">
+                <strong>圖檔來源與學術引用：</strong>引用自力麗企業股份有限公司彰化一廠品管課長黃元龍編著《聚酯/聚胺 加工絲交絡噴節介紹》技術教材（出自雲端硬碟《翊豐舊資料/專業-紗/噴節知識.dotx》2014 典藏原件）。
+              </div>
+            </div>
+          </article>
+
+          <!-- Plate IV -->
+          <article class="museum-plate-card">
+            <div class="museum-plate-img-wrap" onclick="window.openArchiveLightbox && window.openArchiveLightbox('assets/gallery/archive-itemat-lab-tester.jpg', 'ARCHIVAL PLATE IV：《德國 Enka Tecnica Itemat Lab 交絡牢度檢測儀與 IMK 掃描頭機構圖》')">
+              <img src="assets/gallery/archive-itemat-lab-tester.jpg" alt="德國 Enka Tecnica Itemat Lab 交絡牢度檢測儀與 IMK 掃描頭機構圖" loading="lazy" width="1400" height="920" />
+            </div>
+            <div class="museum-plate-body">
+              <span class="museum-plate-tag">ARCHIVAL PLATE IV · ENKA TECNICA ITEMAT LAB INSTRUMENT</span>
+              <h3>《德國 Enka Tecnica Itemat Lab 交絡牢度檢測儀與三羅拉張力機構圖》</h3>
+              <p>展示國際化纖品管實驗室標準交絡檢測設備：紗線經壓絲器（Spring B1）、止撚器（B2）、第一圓筒羅拉（G1）、第一張力器（FZK1）、第二圓筒羅拉（G2）、第二張力器（FZK2）與 IMK 交絡掃描頭，精準測定延伸拉扯後之未脫節殘留比率。</p>
+              <div class="citation-source-box">
+                <strong>圖檔來源與學術引用：</strong>引用自德國 Enka Tecnica GmbH《Itemat Lab TSI Technical Manual》暨力麗企業彰化一廠黃元龍《聚酯/聚胺 加工絲交絡噴節介紹》（翊豐企業 2014 技術典藏）。
+              </div>
+            </div>
+          </article>
+
+          <!-- Plate V -->
+          <article class="museum-plate-card">
+            <div class="museum-plate-img-wrap" onclick="window.openArchiveLightbox && window.openArchiveLightbox('assets/gallery/archive-itemat-waveform.jpg', 'ARCHIVAL PLATE V：《Itemat Lab 交絡張力波形圖、0–6% 延伸牢度 Stability 與開纖距離分佈圖》')">
+              <img src="assets/gallery/archive-itemat-waveform.jpg" alt="Itemat Lab 交絡張力波形圖與開纖距離分佈圖" loading="lazy" width="1400" height="920" />
+            </div>
+            <div class="museum-plate-body">
+              <span class="museum-plate-tag">ARCHIVAL PLATE V · INTERLACE TENSION SPECTRUM & STABILITY</span>
+              <h3>《Itemat Lab 交絡張力波形圖：重交絡 vs 輕交絡、延伸牢度與開纖距離分佈》</h3>
+              <p>實測 10 公尺樣紗在 0.0%、2.0%、4.0%、6.0% 延伸比（Elongation）下之張力峰值（Force 1: 9 cN → 112 cN）、每米交絡節數（98.6–100.8 節/m）、平均節點間距（Mean OL 1.00 cm）與最大節點長度（Max. KL 0.8 cm）。</p>
+              <div class="citation-source-box">
+                <strong>圖檔來源與學術引用：</strong>引用自力麗企業股份有限公司彰化一廠品管課長黃元龍《聚酯/聚胺 加工絲交絡噴節介紹》實測波形圖譜（翊豐企業 2014 技術典藏）。
+              </div>
+            </div>
+          </article>
+
+          <!-- Plate VI & VII combined showcase -->
+          <article class="museum-plate-card">
+            <div class="museum-plate-img-wrap" onclick="window.openArchiveLightbox && window.openArchiveLightbox('assets/gallery/archive-cti-rapier-looms.jpg', 'ARCHIVAL PLATE VII：《下游高速無梭織造工程：義大利 Somet Thema 11、VAMATEX 與德國 DORNIER 劍桅提花織機》')">
+              <img src="assets/gallery/archive-cti-rapier-looms.jpg" alt="義大利 Somet Thema 11、VAMATEX 與德國 DORNIER 劍桅提花織機實景" loading="lazy" width="1400" height="920" />
+            </div>
+            <div class="museum-plate-body">
+              <span class="museum-plate-tag">ARCHIVAL PLATE VI & VII · DOWNSTREAM WARPING & WEAVING LOOMS</span>
+              <h3>《下游梭織準備與高速無梭織造實景：H420 整經、單紗漿紗與 DORNIER / Somet 劍桅織機》</h3>
+              <p>展示翊豐 DTY 進入下游織布廠後之實務設備：包含 H420 分條整經機、轉鼓併經機、長纖單紗漿紗機，以及配備德國 Schmeing 綜框之義大利 Somet Thema 11、VAMATEX 與德國 Lindauer DORNIER 高速劍桅提花織機。</p>
+              <div class="citation-source-box">
+                <strong>圖檔來源與學術引用：</strong>引用自經濟部工業局主辦／財團法人中國紡織工業研究中心（China Textile Institute）執行，鄧永順主講《高科技紡織人才培訓計畫：梭織實務介紹》（中華民國 92 年 10 月 8 日，出自《翊豐舊資料/專業-紗/梭織實務介紹簡報.pdf》）。
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+</main>
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-col">
@@ -501,7 +928,7 @@
     </div>
     <div class="container footer-bottom">
       <span data-i18n="footer.copyright">© 1987–2026 YEAR FAWN ENTERPRISE CO., LTD. 翊豐企業股份有限公司 All Rights Reserved.</span>
-      <span class="mono">MULTI-PAGE ARCHITECTURE · ZH-TW · EN · JA · ES · TH · VI</span>
+      <span class="mono">9-LANGUAGE GLOBAL EDITION · ZH-TW · EN · JA · KO · FR · IT · ES · TH · VI</span>
     </div>
   </footer>
 
@@ -521,5 +948,81 @@
 
   <script src="i18n.js"></script>
   
+
+  <!-- 博物館典藏圖鑑高解析放大檢視燈箱 (Archive Lightbox Modal) -->
+  <div class="archive-lightbox" id="archive-lightbox" role="dialog" aria-modal="true" aria-label="Archival Plate Viewer" onclick="if(event.target===this) window.closeArchiveLightbox()">
+    <div class="archive-lightbox-inner">
+      <img id="archive-lightbox-img" src="assets/gallery/archive-dty-5code-system.jpg" alt="Archival Plate Full View" />
+      <div class="archive-lightbox-bar">
+        <div id="archive-lightbox-caption" style="font-size:0.9rem;color:#f8fafc;font-weight:600;"></div>
+        <button type="button" class="archive-lightbox-close" onclick="window.closeArchiveLightbox()">關閉檢視 (ESC)</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    // 翊豐 DTY 五碼批號互動解碼器 (100.3.7 規範)
+    window.updateBatchDecoder = function() {
+      var c1 = document.getElementById('dec-code1');
+      var c2 = document.getElementById('dec-code2');
+      var c3 = document.getElementById('dec-code3');
+      var c45 = document.getElementById('dec-code45');
+      var outCode = document.getElementById('dec-output-code');
+      var outDesc = document.getElementById('dec-output-desc');
+      if (!c1 || !c2 || !c3 || !c45 || !outCode || !outDesc) return;
+      var v1 = c1.value, v2 = c2.value, v3 = c3.value, v45 = c45.value;
+      var d1 = c1.options[c1.selectedIndex].getAttribute('data-desc');
+      var den = c2.options[c2.selectedIndex].getAttribute('data-den');
+      var fil = c3.options[c3.selectedIndex].getAttribute('data-fil');
+      var grd = c45.options[c45.selectedIndex].getAttribute('data-grade');
+      var ply = ['N','P','Q','R'].indexOf(v1) !== -1 ? '2/N (雙股無扭)' : (v45 === '0S' ? '1/S (單股S撚)' : '1/Z (單股Z撚)');
+      outCode.textContent = '#' + v1 + v2 + v3 + v45;
+      outDesc.textContent = '生產規格：' + den + ' / ' + fil + ' ' + d1 + ' ｜ 品管等級：' + grd + ' ｜ 廠內簡記：' + den.replace('D','') + '/' + fil.replace('F','') + '/' + ply;
+    };
+
+    // 40+ 條目紡織專業辭典即時搜尋與分類篩選
+    window._activeGlossaryCat = 'all';
+    window.setGlossaryCat = function(cat, btn) {
+      window._activeGlossaryCat = cat;
+      var btns = document.querySelectorAll('.glossary-filter-btn');
+      for (var i = 0; i < btns.length; i++) btns[i].classList.remove('active');
+      if (btn) btn.classList.add('active');
+      window.filterGlossary();
+    };
+    window.filterGlossary = function() {
+      var input = document.getElementById('glossary-search-input');
+      var q = input ? input.value.trim().toLowerCase() : '';
+      var cat = window._activeGlossaryCat || 'all';
+      var items = document.querySelectorAll('.glossary-term-item');
+      for (var i = 0; i < items.length; i++) {
+        var el = items[i];
+        var itemCat = el.getAttribute('data-glossary-cat');
+        var text = el.textContent.toLowerCase();
+        var matchCat = (cat === 'all' || itemCat === cat);
+        var matchQ = (!q || text.indexOf(q) !== -1);
+        el.style.display = (matchCat && matchQ) ? '' : 'none';
+      }
+    };
+
+    // 博物館典藏圖鑑燈箱放大檢視
+    window.openArchiveLightbox = function(src, caption) {
+      var modal = document.getElementById('archive-lightbox');
+      var img = document.getElementById('archive-lightbox-img');
+      var cap = document.getElementById('archive-lightbox-caption');
+      if (!modal || !img) return;
+      img.src = src;
+      if (cap) cap.textContent = caption || '';
+      modal.classList.add('open');
+    };
+    window.closeArchiveLightbox = function() {
+      var modal = document.getElementById('archive-lightbox');
+      if (modal) modal.classList.remove('open');
+    };
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') window.closeArchiveLightbox();
+    });
+  </script>
+
 </body>
 </html>

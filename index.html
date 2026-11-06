@@ -39,6 +39,16 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="alternate" hreflang="zh-Hant-TW" href="https://kaidragon0815-design.github.io/yearfawn-website/index.html?lang=zh-TW" />
+  <link rel="alternate" hreflang="en" href="https://kaidragon0815-design.github.io/yearfawn-website/index.html?lang=en" />
+  <link rel="alternate" hreflang="ja" href="https://kaidragon0815-design.github.io/yearfawn-website/index.html?lang=ja" />
+  <link rel="alternate" hreflang="ko" href="https://kaidragon0815-design.github.io/yearfawn-website/index.html?lang=ko" />
+  <link rel="alternate" hreflang="fr" href="https://kaidragon0815-design.github.io/yearfawn-website/index.html?lang=fr" />
+  <link rel="alternate" hreflang="it" href="https://kaidragon0815-design.github.io/yearfawn-website/index.html?lang=it" />
+  <link rel="alternate" hreflang="es" href="https://kaidragon0815-design.github.io/yearfawn-website/index.html?lang=es" />
+  <link rel="alternate" hreflang="th" href="https://kaidragon0815-design.github.io/yearfawn-website/index.html?lang=th" />
+  <link rel="alternate" hreflang="vi" href="https://kaidragon0815-design.github.io/yearfawn-website/index.html?lang=vi" />
+  <link rel="alternate" hreflang="x-default" href="https://kaidragon0815-design.github.io/yearfawn-website/index.html" />
 </head><body data-page="home">
   <div class="ambient-grid" aria-hidden="true"></div>
 
@@ -56,13 +66,11 @@
 
       <nav class="main-nav" aria-label="Primary Navigation">
         <a href="index.html" class="nav-link nav-link-active" data-i18n="nav.home">首頁</a>
+        <a href="polymerization.html" class="nav-link" data-i18n="nav.polymer">上游聚合與產業鏈</a>
         <a href="products.html" class="nav-link" data-i18n="nav.products">DTY 產品與規格</a>
-        <a href="process-3d.html" class="nav-link nav-link-highlight">
-          <span class="pulse-dot"></span>
-          <span data-i18n="nav.process">3D 假撚製程模擬</span>
-        </a>
-        <a href="insights.html" class="nav-link" data-i18n="nav.insights">技術百科專欄</a>
-        <a href="facilities.html" class="nav-link" data-i18n="nav.facilities">雙廠區規模</a>
+        <a href="process-3d.html" class="nav-link nav-link-highlight"><span class="pulse-dot"></span><span data-i18n="nav.process">3D 假撚製程模擬</span></a>
+        <a href="insights.html" class="nav-link" data-i18n="nav.insights">技術百科與辭典</a>
+        <a href="facilities.html" class="nav-link" data-i18n="nav.facilities">雙廠區與典藏館</a>
         <a href="contact.html" class="nav-link" data-i18n="nav.contact">詢價／索取樣紗</a>
       </nav>
 
@@ -71,6 +79,9 @@
           <button class="lang-btn active" data-lang-btn="zh-TW">繁中</button>
           <button class="lang-btn" data-lang-btn="en">EN</button>
           <button class="lang-btn" data-lang-btn="ja">日本語</button>
+          <button class="lang-btn" data-lang-btn="ko">한국어</button>
+          <button class="lang-btn" data-lang-btn="fr">FR</button>
+          <button class="lang-btn" data-lang-btn="it">IT</button>
           <button class="lang-btn" data-lang-btn="es">ES</button>
           <button class="lang-btn" data-lang-btn="th">ไทย</button>
           <button class="lang-btn" data-lang-btn="vi">VI</button>
@@ -95,10 +106,11 @@
       </div>
       <div class="mobile-nav-links">
         <a href="index.html" class="mobile-nav-link mobile-nav-highlight" data-i18n="nav.home">首頁</a>
+        <a href="polymerization.html" class="mobile-nav-link" data-i18n="nav.polymer">上游聚合與產業鏈</a>
         <a href="products.html" class="mobile-nav-link" data-i18n="nav.products">DTY 產品與規格</a>
         <a href="process-3d.html" class="mobile-nav-link mobile-nav-highlight" data-i18n="nav.process">3D 假撚製程模擬</a>
-        <a href="insights.html" class="mobile-nav-link" data-i18n="nav.insights">技術百科專欄</a>
-        <a href="facilities.html" class="mobile-nav-link" data-i18n="nav.facilities">雙廠區規模</a>
+        <a href="insights.html" class="mobile-nav-link" data-i18n="nav.insights">技術百科與辭典</a>
+        <a href="facilities.html" class="mobile-nav-link" data-i18n="nav.facilities">雙廠區與典藏館</a>
         <a href="contact.html" class="mobile-nav-link" data-i18n="nav.contact">詢價／索取樣紗</a>
       </div>
       <div class="mobile-drawer-contact">
@@ -1134,7 +1146,7 @@
     </div>
     <div class="container footer-bottom">
       <span data-i18n="footer.copyright">© 1987–2026 YEAR FAWN ENTERPRISE CO., LTD. 翊豐企業股份有限公司 All Rights Reserved.</span>
-      <span class="mono">MULTI-PAGE ARCHITECTURE · ZH-TW · EN · JA · ES · TH · VI</span>
+      <span class="mono">9-LANGUAGE GLOBAL EDITION · ZH-TW · EN · JA · KO · FR · IT · ES · TH · VI</span>
     </div>
   </footer>
 
@@ -1154,5 +1166,123 @@
 
   <script src="i18n.js"></script>
   <script src="spinning3d.js"></script>
+
+  <!-- 博物館典藏圖鑑高解析放大檢視燈箱 (Archive Lightbox Modal) -->
+  <div class="archive-lightbox" id="archive-lightbox" role="dialog" aria-modal="true" aria-label="Archival Plate Viewer" onclick="if(event.target===this) window.closeArchiveLightbox()">
+    <div class="archive-lightbox-inner">
+      <img id="archive-lightbox-img" src="assets/gallery/archive-dty-5code-system.jpg" alt="Archival Plate Full View" />
+      <div class="archive-lightbox-bar">
+        <div id="archive-lightbox-caption" style="font-size:0.9rem;color:#f8fafc;font-weight:600;"></div>
+        <button type="button" class="archive-lightbox-close" onclick="window.closeArchiveLightbox()">關閉檢視 (ESC)</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    // 翊豐 DTY 五碼批號互動解碼器 (100.3.7 規範)
+    window.updateBatchDecoder = function() {
+      var c1 = document.getElementById('dec-code1');
+      var c2 = document.getElementById('dec-code2');
+      var c3 = document.getElementById('dec-code3');
+      var c45 = document.getElementById('dec-code45');
+      var outCode = document.getElementById('dec-output-code');
+      var outDesc = document.getElementById('dec-output-desc');
+      if (!c1 || !c2 || !c3 || !c45 || !outCode || !outDesc) return;
+      var v1 = c1.value, v2 = c2.value, v3 = c3.value, v45 = c45.value;
+      var d1 = c1.options[c1.selectedIndex].getAttribute('data-desc');
+      var den = c2.options[c2.selectedIndex].getAttribute('data-den');
+      var fil = c3.options[c3.selectedIndex].getAttribute('data-fil');
+      var grd = c45.options[c45.selectedIndex].getAttribute('data-grade');
+      var ply = ['N','P','Q','R'].indexOf(v1) !== -1 ? '2/N (雙股無扭)' : (v45 === '0S' ? '1/S (單股S撚)' : '1/Z (單股Z撚)');
+      outCode.textContent = '#' + v1 + v2 + v3 + v45;
+      outDesc.textContent = '生產規格：' + den + ' / ' + fil + ' ' + d1 + ' ｜ 品管等級：' + grd + ' ｜ 廠內簡記：' + den.replace('D','') + '/' + fil.replace('F','') + '/' + ply;
+    };
+
+    // 40+ 條目紡織專業辭典即時搜尋與分類篩選
+    window._activeGlossaryCat = 'all';
+    window.setGlossaryCat = function(cat, btn) {
+      window._activeGlossaryCat = cat;
+      var btns = document.querySelectorAll('.glossary-filter-btn');
+      for (var i = 0; i < btns.length; i++) btns[i].classList.remove('active');
+      if (btn) btn.classList.add('active');
+      window.filterGlossary();
+    };
+    window.filterGlossary = function() {
+      var input = document.getElementById('glossary-search-input');
+      var q = input ? input.value.trim().toLowerCase() : '';
+      var cat = window._activeGlossaryCat || 'all';
+      var items = document.querySelectorAll('.glossary-term-item');
+      for (var i = 0; i < items.length; i++) {
+        var el = items[i];
+        var itemCat = el.getAttribute('data-glossary-cat');
+        var text = el.textContent.toLowerCase();
+        var matchCat = (cat === 'all' || itemCat === cat);
+        var matchQ = (!q || text.indexOf(q) !== -1);
+        el.style.display = (matchCat && matchQ) ? '' : 'none';
+      }
+    };
+
+    // 博物館典藏圖鑑燈箱放大檢視
+    window.openArchiveLightbox = function(src, caption) {
+      var modal = document.getElementById('archive-lightbox');
+      var img = document.getElementById('archive-lightbox-img');
+      var cap = document.getElementById('archive-lightbox-caption');
+      if (!modal || !img) return;
+      img.src = src;
+      if (cap) cap.textContent = caption || '';
+      modal.classList.add('open');
+    };
+    window.closeArchiveLightbox = function() {
+      var modal = document.getElementById('archive-lightbox');
+      if (modal) modal.classList.remove('open');
+    };
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') window.closeArchiveLightbox();
+    });
+  </script>
+
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "為什麼 POY 半延伸原絲必須經過「延伸假撚（Draw Texturing）」才能變成 DTY 加工絲？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "POY（Partially Oriented Yarn）以 3,200 m/min 紡絲時結晶度僅約 25%、斷裂伸度高達 126%（南亞 POY 實測）、沸水收縮率高達 50–60%，且在室溫存放 3–6 個月會發生物理老化，直接織布下水染色會劇烈收縮崩解且呈現刺眼塑膠反光。透過翊豐企業日本村田 33H 高速假撚機進行 1.68x 熱拉伸、18,000 RPM 三軸摩擦加撚、210°C 氣相熱定型與空氣噴節交絡轉化為 DTY 後，結晶度提升至 52%、斷裂強度提升至 4.72 g/den、伸度穩定在 22.5%、沸水收縮率降至 3.5% 以下，並具備 24.3% 伸縮復原率與免上漿高速織造能力。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "聚酯加工絲（DTY）的上游石化原料與聚合反應製程為何？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "上游聚酯（PET）由原油分餾石腦油（Naphtha），提煉對二甲苯（PX）氧化製成高純度對苯二甲酸（PTA ≥99.98%），並由乙烯製備纖維級乙二醇（MEG）。PTA 與 MEG 以 1:1.18 莫耳比於 255°C 直接酯化生成雙羥乙基對苯二甲酸酯（BHET），再於 285°C、高真空（<1 mbar）及催化劑作用下進行熔融縮聚反應，控制特性黏度 IV = 0.645 ± 0.012 dL/g、端羧基 -COOH ≤ 26 eq/10⁶g，並添加銳鈦礦型二氧化鈦（TiO₂）調控大有光（BR）、半消光（SD 0.30%）或全消光（FD 2.20%），最後經 3,200 m/min 高速紡絲製成 POY 原絲。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "台灣紡織產業的五階垂直分工體系為何？翊豐企業扮演什麼角色？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "台灣紡織業由五大階層緊密協作：第一階（Tier 1）為上游石化聚合與 POY 原絲大廠（如南亞、中纖 CMFC、力麗、遠東新、宏洲、紡安）；第二階（Tier 2）為中游關鍵樞紐—翊豐企業股份有限公司（1987 創立，彰化線西一廠與鹿港二廠），以日本村田 33H 假撚機將標準 POY 客製轉化為 75丹、100丹、150丹、300丹之定型紗、屋麗紗與噴節紗；第三階（Tier 3）為彰化平織（線西/和美）、針織（伸港/秀水）、織襪（社頭）與窄幅織帶（鹿港）聚落；第四階（Tier 4）為 130°C 高溫染整、磨毛與刷毛後加工；第五階（Tier 5）為全球運動戶外成衣、鞋材與家飾品牌。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "什麼是 DTY 交絡噴節牢度（TA1–TA9）與翊豐五碼批號編碼原則？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "交絡牢度（Interlace Retention Stability）由德國 Enka Tecnica Itemat Lab 儀器測定，公式為 [(每米原交絡節數 - 延伸後脫節數) ÷ 每米原交絡節數] × 100%，代號 TA1（0–15%）至 TA5（46–55%，節點較鬆弛、手感極柔軟）至 TA9（86–95%，節點緊密不脫節、免上漿經紗專用）。翊豐五碼批號（100.3.7 規範）第一碼代表單雙股與噴節/定型（A~V），第二碼代表丹尼數（1=30D 至 8=600D），第三碼代表單絲條數（1=24F 至 9=288F），第四五碼為流水號與等級/撚向。"
+        }
+      }
+    ]
+  }
+  </script>
+
 </body>
 </html>

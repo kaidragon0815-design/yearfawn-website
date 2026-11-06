@@ -39,6 +39,16 @@
 
   
   <link rel="stylesheet" href="styles.css" />
+  <link rel="alternate" hreflang="zh-Hant-TW" href="https://kaidragon0815-design.github.io/yearfawn-website/insights.html?lang=zh-TW" />
+  <link rel="alternate" hreflang="en" href="https://kaidragon0815-design.github.io/yearfawn-website/insights.html?lang=en" />
+  <link rel="alternate" hreflang="ja" href="https://kaidragon0815-design.github.io/yearfawn-website/insights.html?lang=ja" />
+  <link rel="alternate" hreflang="ko" href="https://kaidragon0815-design.github.io/yearfawn-website/insights.html?lang=ko" />
+  <link rel="alternate" hreflang="fr" href="https://kaidragon0815-design.github.io/yearfawn-website/insights.html?lang=fr" />
+  <link rel="alternate" hreflang="it" href="https://kaidragon0815-design.github.io/yearfawn-website/insights.html?lang=it" />
+  <link rel="alternate" hreflang="es" href="https://kaidragon0815-design.github.io/yearfawn-website/insights.html?lang=es" />
+  <link rel="alternate" hreflang="th" href="https://kaidragon0815-design.github.io/yearfawn-website/insights.html?lang=th" />
+  <link rel="alternate" hreflang="vi" href="https://kaidragon0815-design.github.io/yearfawn-website/insights.html?lang=vi" />
+  <link rel="alternate" hreflang="x-default" href="https://kaidragon0815-design.github.io/yearfawn-website/insights.html" />
 </head><body data-page="insights">
   <div class="ambient-grid" aria-hidden="true"></div>
 
@@ -56,13 +66,11 @@
 
       <nav class="main-nav" aria-label="Primary Navigation">
         <a href="index.html" class="nav-link" data-i18n="nav.home">首頁</a>
+        <a href="polymerization.html" class="nav-link" data-i18n="nav.polymer">上游聚合與產業鏈</a>
         <a href="products.html" class="nav-link" data-i18n="nav.products">DTY 產品與規格</a>
-        <a href="process-3d.html" class="nav-link nav-link-highlight">
-          <span class="pulse-dot"></span>
-          <span data-i18n="nav.process">3D 假撚製程模擬</span>
-        </a>
-        <a href="insights.html" class="nav-link nav-link-active" data-i18n="nav.insights">技術百科專欄</a>
-        <a href="facilities.html" class="nav-link" data-i18n="nav.facilities">雙廠區規模</a>
+        <a href="process-3d.html" class="nav-link nav-link-highlight"><span class="pulse-dot"></span><span data-i18n="nav.process">3D 假撚製程模擬</span></a>
+        <a href="insights.html" class="nav-link nav-link-active" data-i18n="nav.insights">技術百科與辭典</a>
+        <a href="facilities.html" class="nav-link" data-i18n="nav.facilities">雙廠區與典藏館</a>
         <a href="contact.html" class="nav-link" data-i18n="nav.contact">詢價／索取樣紗</a>
       </nav>
 
@@ -71,6 +79,9 @@
           <button class="lang-btn active" data-lang-btn="zh-TW">繁中</button>
           <button class="lang-btn" data-lang-btn="en">EN</button>
           <button class="lang-btn" data-lang-btn="ja">日本語</button>
+          <button class="lang-btn" data-lang-btn="ko">한국어</button>
+          <button class="lang-btn" data-lang-btn="fr">FR</button>
+          <button class="lang-btn" data-lang-btn="it">IT</button>
           <button class="lang-btn" data-lang-btn="es">ES</button>
           <button class="lang-btn" data-lang-btn="th">ไทย</button>
           <button class="lang-btn" data-lang-btn="vi">VI</button>
@@ -95,10 +106,11 @@
       </div>
       <div class="mobile-nav-links">
         <a href="index.html" class="mobile-nav-link" data-i18n="nav.home">首頁</a>
+        <a href="polymerization.html" class="mobile-nav-link" data-i18n="nav.polymer">上游聚合與產業鏈</a>
         <a href="products.html" class="mobile-nav-link" data-i18n="nav.products">DTY 產品與規格</a>
         <a href="process-3d.html" class="mobile-nav-link mobile-nav-highlight" data-i18n="nav.process">3D 假撚製程模擬</a>
-        <a href="insights.html" class="mobile-nav-link mobile-nav-highlight" data-i18n="nav.insights">技術百科專欄</a>
-        <a href="facilities.html" class="mobile-nav-link" data-i18n="nav.facilities">雙廠區規模</a>
+        <a href="insights.html" class="mobile-nav-link mobile-nav-highlight" data-i18n="nav.insights">技術百科與辭典</a>
+        <a href="facilities.html" class="mobile-nav-link" data-i18n="nav.facilities">雙廠區與典藏館</a>
         <a href="contact.html" class="mobile-nav-link" data-i18n="nav.contact">詢價／索取樣紗</a>
       </div>
       <div class="mobile-drawer-contact">
@@ -621,7 +633,985 @@
           </div>
         </div>
       </div>
-    </section></main>
+    </section>
+    <!-- 核心科學延伸：為何 POY 原絲必須經過「延伸假撚 (Draw Texturing)」才能變成 DTY 加工絲？ -->
+    <section class="section" id="why-poy-to-dty">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow" data-i18n="whydty.eyebrow">POLYMER PHYSICS & TEXTILE THERMODYNAMICS · 為何 POY 必須假撚成 DTY？</div>
+          <h2 class="section-title" data-i18n="whydty.title">為什麼 POY 原絲不能直接織布？從 POY 到 DTY 的六大高分子物理與織造工程蛻變</h2>
+          <p class="section-desc" data-i18n="whydty.desc">
+            許多採購與紡織初學者常問：「上游化纖廠抽出的 POY 原絲已經是連續聚酯長絲，為何還必須送到翊豐企業進行『延伸假撚（Draw Texturing）』加工變成 DTY？」答案深植於高分子結晶熱力學、流體力學與織造機械力學之中。我們結合雲端典藏之《南亞塑膠 POY 品質檢驗報告》與《翊豐企業 DTY 品質檢驗報告》實測數據，為您深度解密。
+          </p>
+        </div>
+
+        <div class="poy-dty-hero-split">
+          <div class="poy-dty-visual-box">
+            <img src="assets/gallery/poy-to-dty-micro-transformation.jpg" alt="POY 平直半延伸原絲轉化為 DTY 三維螺旋捲曲與空氣交絡節點微觀對照圖" loading="lazy" width="1200" height="675" />
+            <div class="savon-seal-caption">
+              <strong>圖 III：微米級結構蛻變 — 左側 POY 平行玻璃態原絲 vs 右側 DTY 三維螺旋捲曲與空氣噴節交絡節點（Knot）</strong>
+              <span>科學視覺說明：經 1.68x 同步熱拉伸、18,000 RPM 三軸摩擦加撚、210°C 氣相熱定型與高壓空氣交絡後之微米單絲形貌變態</span>
+            </div>
+          </div>
+
+          <div>
+            <span class="tech-tag tech-tag-cyan" style="margin-bottom:12px;display:inline-block;">AUTHENTIC LAB COA PROOF · 實測檢驗報告數據鐵證</span>
+            <h3 style="font-size:1.4rem;color:#ffffff;font-weight:800;margin-bottom:12px;line-height:1.35;">南亞 POY 原絲（Lot 42463） vs 翊豐鹿牌 DTY 成品紗（A 級品）實測物性躍遷</h3>
+            <p style="font-size:0.92rem;color:#cbd5e1;line-height:1.7;margin-bottom:16px;">
+              根據翊豐企業 2014–2015 雲端檔案室典藏之兩份真實檢驗報告（如下方博物館圖鑑 Plate II 與 Plate VIII 所示）：未經假撚之 POY 原絲斷裂伸度高達 <strong style="color:#f5d08a;">126%</strong>、斷裂強度僅 <strong style="color:#f5d08a;">3.05 g/den</strong>，一旦受熱或受力即劇烈拉長變形；經翊豐日本村田 33H 假撚機延伸定型為 DTY 後，斷裂強度躍升 55% 達 <strong style="color:#38bdf8;">4.72 g/den</strong>，伸度精準收斂至 <strong style="color:#38bdf8;">22.5%</strong>，並賦予 <strong style="color:#38bdf8;">24.3%</strong> 的立體捲曲伸縮復原率（Crimp Rigidity）！
+            </p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+              <div style="background:rgba(15,23,42,0.9);border:1px solid rgba(245,158,11,0.4);border-radius:12px;padding:14px;">
+                <div class="mono" style="font-size:0.72rem;color:#f5d08a;margin-bottom:4px;">UPSTREAM RAW POY (南亞實測)</div>
+                <div style="font-size:0.86rem;color:#e2e8f0;line-height:1.6;">
+                  • 斷裂強度：<strong>3.05 g/den</strong>（偏軟易拉斷）<br/>
+                  • 斷裂伸度：<strong>126.0 %</strong>（一拉即長、無法定型）<br/>
+                  • 沸水收縮率：<strong>50% – 60%</strong>（下水即縮皺崩解）<br/>
+                  • 捲曲復原率：<strong>0 %</strong>（筆直無彈性、塑膠感）<br/>
+                  • 含油率 OPU：<strong>0.20 %</strong>（不耐高速織機摩擦）
+                </div>
+              </div>
+              <div style="background:rgba(2,132,199,0.18);border:1px solid #38bdf8;border-radius:12px;padding:14px;">
+                <div class="mono" style="font-size:0.72rem;color:#38bdf8;margin-bottom:4px;">YEAR FAWN DTY (翊豐鹿牌實測)</div>
+                <div style="font-size:0.86rem;color:#ffffff;line-height:1.6;">
+                  • 斷裂強度：<strong>4.72 g/den</strong>（強韌耐高速織造）<br/>
+                  • 斷裂伸度：<strong>22.5 %</strong>（最佳織造彈性區間）<br/>
+                  • 沸水收縮率：<strong>< 3.5 %</strong>（染整後尺寸極度穩定）<br/>
+                  • 伸縮復原率：<strong>24.3 %</strong>（豐滿蓬鬆立體回彈）<br/>
+                  • 含油率 OPU：<strong>1.38 %</strong>（抗靜電、低摩擦平滑）
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 六大科學維度卡片 -->
+        <div class="poy-dty-6reasons-grid">
+          <div class="poy-reason-card">
+            <span class="poy-reason-num">DIMENSION 01 · 高分子結晶熱力學</span>
+            <h3 data-i18n="whydty.r1Title">結晶度倍增（22% → 52%）與消除 55% 沸水劇烈收縮</h3>
+            <p data-i18n="whydty.r1Desc">
+              POY 以 3,200 m/min 抽絲時僅具「預取向（Pre-orientation）」，結晶度僅 22%–28%，非晶區分子鏈呈鬆散捲曲狀。若直接織布投入 130°C 染缸，分子鏈會發生劇烈熵彈性回縮（沸水收縮率高達 50%–60%），使整匹布縮成硬塊。假撚機透過 DR 1.65–1.72x 同步熱拉伸與 210°C 熱箱結晶化，將結晶度推升至 48%–55%，使定型紗沸水收縮率降至 3.5% 以下。
+            </p>
+            <div class="poy-metric-compare">Crystallinity: 25% (POY) → 52% (DTY) | BWS: 55% → &lt; 3.5%</div>
+          </div>
+
+          <div class="poy-reason-card">
+            <span class="poy-reason-num">DIMENSION 02 · 流變穩定性與保存期</span>
+            <h3 data-i18n="whydty.r2Title">破除 POY「室溫物理老化（Physical Aging）」變質危機</h3>
+            <p data-i18n="whydty.r2Desc">
+              POY 內部非晶區處於熱力學非平衡亞穩態（ガラス轉移溫度 Tg 附近），在室溫倉庫存放超過 3 至 6 個月即會發生自發性冷結晶與應力鬆弛（物理老化），導致紗線變脆、強伸度劣化且染色吸色率隨存放時間劇烈改變。轉化為 DTY 後，分子晶格經高溫定型永久鎖固，可長期穩定倉儲與跨洲海運。
+            </p>
+            <div class="poy-metric-compare">Shelf Stability: 3–6 Months (POY) → Multi-Year Stable (DTY)</div>
+          </div>
+
+          <div class="poy-reason-card">
+            <span class="poy-reason-num">DIMENSION 03 · 幾何形貌與光學漫射</span>
+            <h3 data-i18n="whydty.r3Title">告別冰冷「塑膠極光與貼膚蠟感」，賦予天然羊毛棉感</h3>
+            <p data-i18n="whydty.r3Desc">
+              未假撚之長絲（POY/FDY）單絲如玻璃棒般筆直平行排列，織物表面會產生刺眼的鏡面塑膠反光（Plastic Glare），且緊貼流汗肌膚、毫無豐滿度。經過 18,000 RPM 假撚扭轉定型再解撚後，36F–144F 單絲呈現三維螺旋空間捲曲（3D Helical Crimp），光線產生溫潤漫反射，手感瞬間轉為豐厚、柔軟且具 24.3% 伸縮復原率。
+            </p>
+            <div class="poy-metric-compare">Geometry: 1D Flat Glassy Rod → 3D Helical Spring Crimp (CR 24.3%)</div>
+          </div>
+
+          <div class="poy-reason-card">
+            <span class="poy-reason-num">DIMENSION 04 · 微氣候與毛細流體力學</span>
+            <h3 data-i18n="whydty.r4Title">孔隙率躍升至 70%：冬季靜止空氣保暖 × 夏季毛細芯吸排汗</h3>
+            <p data-i18n="whydty.r4Desc">
+              平直原絲束內部緊密貼合，空隙率低於 15%。DTY 立體捲曲單絲之間撐開數百萬個微米級三維連通氣孔，使紗線孔隙率（Porosity）躍升至 60%–75%：在刷毛搖粒絨中能鎖住大量靜止空氣層（熱傳導率極低）實現輕量禦寒；在運動機能針織布中則形成「Washburn 毛細管負壓通道」，將體表汗水瞬間導出擴散蒸發。
+            </p>
+            <div class="poy-metric-compare">Yarn Porosity: &lt; 15% (Flat) → 65%–75% (Lofty DTY Micro-Channels)</div>
+          </div>
+
+          <div class="poy-reason-card">
+            <span class="poy-reason-num">DIMENSION 05 · 免上漿綠色織造工程</span>
+            <h3 data-i18n="whydty.r5Title">空氣噴節交絡（TA1–TA9）取代高污染 PVA 化學漿紗</h3>
+            <p data-i18n="whydty.r5Desc">
+              平直無撚原絲在高速整經與織造（800–1,200 RPM 噴水/噴氣織機）時，單絲極易因鋼筘與綜絲摩擦而分岔、起毛羽甚至斷經，傳統上必須耗費大量水電塗佈 PVA 化學漿料再退漿。DTY 於假撚機同步透過壓縮空氣噴嘴打上每米 40–120 個交絡節點（Knot），以物理集束抱合力徹底免除化學漿紗工序！
+            </p>
+            <div class="poy-metric-compare">Intermingling: 0 Nodes/m (POY) → 40–120 Nodes/m (TA1–TA9 Sizing-Free)</div>
+          </div>
+
+          <div class="poy-reason-card">
+            <span class="poy-reason-num">DIMENSION 06 · 染色動力學與一紗三態</span>
+            <h3 data-i18n="whydty.r6Title">均質化非晶區染座（M/K 4.5級）與定型/屋麗/噴節萬用分流</h3>
+            <p data-i18n="whydty.r6Desc">
+              聚酯屬疏水性結晶高分子，必須依賴分散染料（Disperse Dyes）在 130°C 高溫下滲入非晶區微孔上色。假撚機 ±0.3°C 精密熱歷史能重構均勻的非晶區微孔尺寸（杜絕經柳與橫條色差 Barre）；同時僅需切換一/二熱箱與超餵離合器，即可將同一種 POY 轉化為低收縮「定型紗」、高彈性「屋麗紗」或雙色竹節「噴節紗」。
+            </p>
+            <div class="poy-metric-compare">1 POY Feedstock → 3 Versatile DTY Families (Set / Woolly / Slub)</div>
+          </div>
+        </div>
+
+        <!-- POY vs FDY vs DTY vs ATY vs ACY/SCY 完整十項物性對照表 -->
+        <div class="spec-table-wrap">
+          <table class="spec-table">
+            <thead>
+              <tr>
+                <th>紗種分類與代號</th>
+                <th>製造工藝核心</th>
+                <th>單絲微觀形貌</th>
+                <th>斷裂強度 (g/d)</th>
+                <th>斷裂伸度 (%)</th>
+                <th>沸水收縮率 BWS</th>
+                <th>捲曲收縮率 CC%</th>
+                <th>核心優缺點與下游定位</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="mono"><strong>POY 半延伸原絲</strong><br/>(Partially Oriented)</td>
+                <td>3,200 m/min 高速熔融紡絲（未完全拉伸）</td>
+                <td>平行筆直、低結晶亞穩態（25%）</td>
+                <td class="mono">2.8 – 3.2<br/>(南亞實測 3.05)</td>
+                <td class="mono">110% – 135%<br/>(南亞實測 126%)</td>
+                <td class="mono">50% – 60%</td>
+                <td class="mono">0% (無捲曲)</td>
+                <td>❌ 不可直接織布（受熱劇烈收縮、3個月物理老化）；專供翊豐假撚機生產 DTY 之原料。</td>
+              </tr>
+              <tr>
+                <td class="mono"><strong>FDY 全延伸原絲</strong><br/>(Fully Drawn)</td>
+                <td>5,000 m/min 紡絲熱羅拉一體拉伸定型</td>
+                <td>平行筆直、高結晶緊密排列</td>
+                <td class="mono">4.2 – 5.2</td>
+                <td class="mono">22% – 35%</td>
+                <td class="mono">6% – 9%</td>
+                <td class="mono">0% (無捲曲)</td>
+                <td>具絲緞鏡面光澤與平滑感，但無蓬鬆度、無彈性且較貼膚；多用於塔夫塔內里或與 DTY 交織。</td>
+              </tr>
+              <tr style="background:rgba(56,189,248,0.09);">
+                <td class="mono"><strong>DTY 定型紗 (Set)</strong><br/>★ 翊豐主力 (75–300D)</td>
+                <td>POY + 1.68x 拉伸 + 18,000 RPM 假撚 + <strong>一熱箱 & 二熱箱雙重熱定型</strong></td>
+                <td>微幅三維螺旋捲曲、低扭矩高穩定</td>
+                <td class="mono"><strong>4.2 – 4.8</strong><br/>(翊豐實測 4.72)</td>
+                <td class="mono"><strong>18% – 25%</strong><br/>(翊豐實測 22.5%)</td>
+                <td class="mono"><strong>&lt; 3.5%</strong></td>
+                <td class="mono"><strong>8% – 14%</strong></td>
+                <td>✅ 兼具豐滿柔順手感與極致尺寸穩定度；高速平織（免上漿經緯紗）、高密圓編針織與高級織帶首選。</td>
+              </tr>
+              <tr style="background:rgba(56,189,248,0.09);">
+                <td class="mono"><strong>DTY 屋麗紗 (Woolly)</strong><br/>★ 翊豐主力 (150–300D)</td>
+                <td>POY + 同步拉伸假撚 + <strong>僅經第一熱箱（關閉第二熱箱）</strong></td>
+                <td>高振幅立體螺旋彈簧捲曲、極蓬鬆</td>
+                <td class="mono"><strong>4.0 – 4.6</strong></td>
+                <td class="mono"><strong>22% – 30%</strong></td>
+                <td class="mono"><strong>5% – 8%</strong></td>
+                <td class="mono"><strong>25% – 38%</strong></td>
+                <td>✅ 最高回彈伸縮性與仿羊毛蓬鬆度；刷毛搖粒絨、珊瑚絨、運動護具鬆緊帶、箱包織帶與織襪包芯首選。</td>
+              </tr>
+              <tr style="background:rgba(56,189,248,0.09);">
+                <td class="mono"><strong>DTY 噴節紗 (Slub)</strong><br/>★ 翊豐主力 (75–300D)</td>
+                <td>假撚變動超餵比 + 高壓間歇氣流交絡</td>
+                <td>縱向粗細竹節交替（未完全拉伸段+基紗）</td>
+                <td class="mono"><strong>3.4 – 4.1</strong></td>
+                <td class="mono"><strong>20% – 28%</strong></td>
+                <td class="mono"><strong>4% – 7%</strong></td>
+                <td class="mono"><strong>12% – 20%</strong></td>
+                <td>✅ 單浴染色即可呈現深淺雙色麻花（Melange）與天然亞麻竹節立體肌理；高單價休閒服、潮鞋與窗簾沙發布首選。</td>
+              </tr>
+              <tr>
+                <td class="mono"><strong>ATY 空氣變形紗</strong><br/>(Air-Textured Yarn)</td>
+                <td>超聲速壓縮空氣噴嘴（8–12 bar）吹亂單絲形成微毛圈</td>
+                <td>表面佈滿不規則微米絲圈（仿短纖棉麻）</td>
+                <td class="mono">3.0 – 3.6</td>
+                <td class="mono">15% – 22%</td>
+                <td class="mono">3% – 5%</td>
+                <td class="mono">5% – 10%</td>
+                <td>外觀最接近天然棉帆布（如 タスラン Taslan），但斷裂強度較 DTY 低約 25% 且耗氣成本高。</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 上游原料聚合工程：從原油、PTA+MEG 直接酯化、285°C 熔融縮聚到 POY 高速抽絲 -->
+    <section class="section" id="upstream-polymerization">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow" data-i18n="poly.eyebrow">UPSTREAM PETROCHEMICAL & POLYMERIZATION ENGINEERING · 高分子化學與流變工程</div>
+          <h2 class="section-title" data-i18n="poly.title">上游原料聚合深度百科：從原油裂解、PTA+MEG 酯化縮聚到 POY 原絲誕生</h2>
+          <p class="section-desc" data-i18n="poly.desc">
+            一顆頂級的 DTY 聚酯加工絲，其品質基因早在進入假撚機之前的「上游石化聚合與熔融紡絲」階段即已決定。以下完整剖析聚對苯二甲酸乙二酯（Polyethylene Terephthalate, PET）從原油分餾、雙單體純化、直接酯化（BHET）、高真空縮聚到高速抽絲的五道高分子化學工程。
+          </p>
+        </div>
+
+        <div class="polymer-chain-grid">
+          <div class="polymer-step-card">
+            <span class="polymer-step-badge">STAGE 01 · PETROCHEMICAL</span>
+            <h3 data-i18n="poly.s1Title">原油分餾與芳烴/烯烴裂解</h3>
+            <div class="polymer-chem-formula">Crude Oil → Naphtha → PX (C₈H₁₀) + Ethylene (C₂H₄)</div>
+            <p data-i18n="poly.s1Desc">
+              原油經蒸餾塔提煉輕油（石腦油 Naphtha），一路由鉑重組芳烴中心分離出「對二甲苯（Paraxylene, PX）」；另一路經輕油裂解爐產出「乙烯（Ethylene）」，再經銀催化氧化生成環氧乙烷（EO）。正如 2014 年國際油價與產能波動圖所示，布侖特（Brent）與西德州（WTI）原油價格直接連動全球聚酯化纖成本。
+            </p>
+          </div>
+
+          <div class="polymer-step-card">
+            <span class="polymer-step-badge">STAGE 02 · MONOMER PURITY</span>
+            <h3 data-i18n="poly.s2Title">高純度雙單體：PTA ＋ MEG 配漿</h3>
+            <div class="polymer-chem-formula">PTA (C₈H₆O₄, ≥99.98%) + MEG (C₂H₆O₂) [1 : 1.18]</div>
+            <p data-i18n="poly.s2Desc">
+              對二甲苯（PX）以醋酸為溶劑經 Amoco 液相空氣氧化與鈀碳加氫精製，製得純度 ≥ 99.98% 之「純對苯二甲酸（PTA）」（4-CBA 雜質嚴控 ≤ 25 ppm）；環氧乙烷水合精餾製得纖維級「乙二醇（MEG）」。兩者以莫耳比 1 : 1.15–1.25 於調漿槽混合成均勻漿料（Slurry）。
+            </p>
+          </div>
+
+          <div class="polymer-step-card gold-accent">
+            <span class="polymer-step-badge">STAGE 03 · ESTERIFICATION</span>
+            <h3 data-i18n="poly.s3Title">直接酯化反應（BHET 生成）</h3>
+            <div class="polymer-chem-formula">n PTA + 2n MEG → BHET + Oligomers + 2n H₂O↑</div>
+            <p data-i18n="poly.s3Desc">
+              漿料泵入 250–265°C、微正壓（0.2–0.5 MPa）之酯化反應釜中，利用 PTA 自身羧基（-COOH）進行自催化酯化反應，連續蒸餾移除反應生成之水分子（H₂O），轉化為「雙羥乙基對苯二甲酸酯（BHET）」單體與聚合度 DP 4–6 之低聚物，酯化率達 95%–98%。此階段同步注入銳鈦礦型二氧化鈦（TiO₂）消光懸浮液。
+            </p>
+          </div>
+
+          <div class="polymer-step-card gold-accent">
+            <span class="polymer-step-badge">STAGE 04 · POLYCONDENSATION</span>
+            <h3 data-i18n="poly.s4Title">預縮聚與 285°C 高真空終縮聚</h3>
+            <div class="polymer-chem-formula">n BHET → -[OC-C₆H₄-COO-CH₂CH₂-O]ₙ- (PET) + (n-1) MEG↑</div>
+            <p data-i18n="poly.s4Desc">
+              在三氧化二銻（Sb₂O₃，180–250 ppm）或環保鈦系催化劑作用下，先經 270°C、15–30 mbar 預縮聚釜，再進入 280–288°C、高真空（< 0.8 mbar）圓盤籠式終縮聚反應器（Finisher）。極高真空將副產物乙二醇抽除，使分子量躍升至 Mn ≈ 20,000 g/mol（DP ≈ 100），特性黏度精準鎖定於 IV = 0.645 ± 0.012 dL/g。
+            </p>
+          </div>
+
+          <div class="polymer-step-card">
+            <span class="polymer-step-badge">STAGE 05 · MELT SPINNING</span>
+            <h3 data-i18n="poly.s5Title">熔體直紡／切片紡絲製備 POY</h3>
+            <div class="polymer-chem-formula">PET Melt (290°C) → Spinneret (36–144F) → 3,200 m/min POY</div>
+            <p data-i18n="poly.s5Desc">
+              高黏度聚酯熔體（或經水下切粒乾燥後之半消光酯粒 PET Chips，含水率須乾燥至 < 30 ppm 防止水解斷鏈）由精密計量齒輪泵加壓通過金屬砂過濾層與 36/48/72/96/144 孔噴絲板擠出，經環吹橫向冷卻風（20°C, 65% RH）固化與油輪上油（OPU 0.20–0.40%）後，以 3,000–3,500 m/min 高速捲繞成 POY 原絲。
+            </p>
+          </div>
+        </div>
+
+        <!-- 上游聚合四大關鍵流變與化學指標表 -->
+        <div class="spec-table-wrap">
+          <table class="spec-table">
+            <thead>
+              <tr>
+                <th data-i18n="poly.thParam">上游聚酯聚合與 POY 原絲核心指標</th>
+                <th data-i18n="poly.thStd">A 級紡絲級控制標準 (Fiber-Grade Spec)</th>
+                <th data-i18n="poly.thTest">檢測方法與物理意義</th>
+                <th data-i18n="poly.thImpact">對中游 DTY 假撚與下游染整之決定性影響</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="mono"><strong>特性黏度 (Intrinsic Viscosity, IV)</strong></td>
+                <td class="mono">0.645 ± 0.012 dL/g</td>
+                <td>烏氏黏度計（酚/四氯乙烷 60:40, 25°C, ASTM D4603）</td>
+                <td>反映分子鏈長度（DP ≈ 100）；IV 波動若超過 ±0.015 會引起假撚解撚張力 T2 劇烈跳動、產生緊點與染色深淺差。</td>
+              </tr>
+              <tr>
+                <td class="mono"><strong>端羧基含量 (Carboxyl End Groups, -COOH)</strong></td>
+                <td class="mono">≤ 26 eq / 10⁶g</td>
+                <td>電位滴定法（Potentiometric Titration）</td>
+                <td>衡量熱降解與耐水解能力；端羧基過高會導致高速抽絲斷頭率上升，且高溫高壓染色時強力流失。</td>
+              </tr>
+              <tr>
+                <td class="mono"><strong>二甘醇含量 (DEG Content)</strong></td>
+                <td class="mono">0.80% – 1.20% wt%</td>
+                <td>甲醇醇解氣相層析法（GC Analysis）</td>
+                <td>DEG 醚鍵會降低玻璃轉移溫度 Tg 與結晶熔點（Tm ≈ 256°C）；批間 DEG 差異超過 0.1% 即會在布面形成明顯橫條色差（Barre）。</td>
+              </tr>
+              <tr>
+                <td class="mono"><strong>二氧化鈦消光劑 (Anatase TiO₂) 與凝聚粒</strong></td>
+                <td class="mono">SD: 0.30 ± 0.03% / FD: 2.20%</td>
+                <td>XRF 螢光光譜與顯微粒徑分佈（< 0.4 μm）</td>
+                <td>決定大有光（BR）、半消光（SD）與全消光（FD）光學漫反射率；凝聚大顆粒（> 3 μm）會磨損假撚陶瓷盤並造成微細單絲斷裂。</td>
+              </tr>
+              <tr>
+                <td class="mono"><strong>POY 斷裂伸度與條幹不勻率 (Elongation & U%)</strong></td>
+                <td class="mono">伸度 126 ± 6% / U% ≤ 0.80%</td>
+                <td>Statimat 強伸度儀與 Uster 電容條幹儀（參照南亞 POY 實測表）</td>
+                <td>POY 伸度與取向度決定假撚機最佳延伸比（DR = 1.65–1.72x）；U% ≤ 0.50%–0.80% 為實現 M/K 染色 4.5 級之先決條件。</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 台灣紡織產業五階垂直分工體系與彰化聚落生態 -->
+    <section class="section" id="taiwan-5tier-supply-chain">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow" data-i18n="tier.eyebrow">TAIWAN TEXTILE ECOSYSTEM · 台灣紡織五階垂直分工與中游樞紐</div>
+          <h2 class="section-title" data-i18n="tier.title">台灣紡織產業完整五階分工體系：為何「中游專業假撚廠」是串聯石化巨頭與彰化萬家織廠的心臟？</h2>
+          <p class="section-desc" data-i18n="tier.desc">
+            台灣能成為全球機能性紡織品與戶外運動品牌（Nike、Adidas、Lululemon、The North Face、Columbia 等）高達 70% 核心面料的研發重鎮，靠的並非單一工廠，而是全球獨一無二的「五階垂直專業分工體系」。翊豐企業（YEAR FAWN）正坐落於最關鍵的第二階（Tier 2）中游假撚樞紐，將上游石化大廠的標準化 POY，精準客製轉化為下游彰化平織、針織與織帶廠所需的數百種規格 DTY。
+          </p>
+        </div>
+
+        <div class="tier5-pipeline-grid">
+          <div class="tier-node-card">
+            <span class="tier-badge">TIER 01 · 上游石化與聚合抽絲</span>
+            <h3 data-i18n="tier.t1Title">石化單體、聚酯聚合與 POY 原絲大廠</h3>
+            <p data-i18n="tier.t1Desc">
+              負責原油裂解、PTA/MEG 生產、285°C 連續縮聚與 3,200 m/min 高速抽絲，日產數百噸標準規格之半延伸原絲（POY）與聚酯切片（PET Chips）。從翊豐 2012–2015 進料檔案可見，翊豐長期與台灣一線原絲大廠深度合作。
+            </p>
+            <div class="tier-clusters">合作供應鏈：南亞塑膠 · 中纖(CMFC) · 力麗/力寶隆 · 遠東新 · 宏洲 · 紡安 · 樺良</div>
+          </div>
+
+          <div class="tier-node-card tier-highlight">
+            <span class="tier-badge">TIER 02 · 中游核心樞紐 (YEAR FAWN)</span>
+            <h3 data-i18n="tier.t2Title">翊豐企業：專業延伸假撚加工（DTY）</h3>
+            <p data-i18n="tier.t2Desc">
+              上游石化廠講究「大宗單一規格連續生產」，下游織布廠卻需要「多樣少量、不同彈性、不同網路牢度與撚向」。翊豐以日本村田 33H 高速假撚機群，將 POY 客製加工為 75丹/100丹/150丹/300丹 之定型紗、屋麗紗、噴節紗、雙股無扭紗與色紗，扮演產業鏈最關鍵的「物理轉譯者」。
+            </p>
+            <div class="tier-clusters">彰化線西總廠 ＋ 鹿港二廠｜鹿牌 (Deer Brand) A級 33KG 標準箱直供</div>
+          </div>
+
+          <div class="tier-node-card">
+            <span class="tier-badge">TIER 03 · 下游分殊化織造聚落</span>
+            <h3 data-i18n="tier.t3Title">平織（梭織）・圓編經編針織・窄幅織帶</h3>
+            <p data-i18n="tier.t3Desc">
+              彰化擁有半徑 15 公里內高度分工的三大織造聚落：1. 平織廠（噴水/噴氣/劍桅織機生產牛津布、軋別丁、雪紡）；2. 針織廠（28G–40G 圓編機與經編機生產 PK 網布、雙面布、搖粒絨與三明治網布）；3. 窄幅織帶與織襪廠（高速無梭織帶機與走馬機）。
+            </p>
+            <div class="tier-clusters">地理聚落：線西／和美（平織與織帶）・伸港／秀水（針織）・鹿港（織帶）・社頭（織襪）</div>
+          </div>
+
+          <div class="tier-node-card">
+            <span class="tier-badge">TIER 04 · 染整與機能後加工</span>
+            <h3 data-i18n="tier.t4Title">高溫高壓染色・磨毛刷毛・貼合塗佈</h3>
+            <p data-i18n="tier.t4Desc">
+              胚布進入染整廠進行精練退漿、預定型、130°C 分散染料高溫高壓溢流/噴射染色，並執行桃皮絨磨毛（Peach Skin）、鋼絲起毛刷毛（Polar Fleece）、PU/TPU 透濕防水貼合、鐵氟龍防潑水與抗菌防臭定型。翊豐 DTY 嚴控 M/K 4.5 級確保染整零橫條色差。
+            </p>
+            <div class="tier-clusters">核心工藝：130°C 高壓染缸 · 鹼減量開纖 · 金剛砂磨毛 · 拉幅熱定型</div>
+          </div>
+
+          <div class="tier-node-card">
+            <span class="tier-badge">TIER 05 · 全球終端品牌與外銷</span>
+            <h3 data-i18n="tier.t5Title">國際運動戶外成衣・潮鞋鞋材・車用家飾</h3>
+            <p data-i18n="tier.t5Desc">
+              成品布與機能織帶銷往歐美、日本、韓國及東南亞（越南、印尼、柬埔寨）成衣與製鞋大廠，製成頂級戶外衝鋒衣、瑜珈運動服、3D 飛織跑鞋鞋面、高強度箱包安全織帶、醫療護具與車用內裝。
+            </p>
+            <div class="tier-clusters">全球市場：台灣 · 日本 · 韓國 · 法國 · 義大利 · 歐美 · 越南 · 泰國</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 40+ 條目 SEO 結構化紡織、聚合與假撚知識定義大辭典 (Master Textile & DTY Glossary) -->
+    <section class="section" id="seo-textile-glossary" itemscope itemtype="https://schema.org/DefinedTermSet">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow" data-i18n="gloss.eyebrow">SEO STRUCTURED TEXTILE ENCYCLOPEDIA · 紡織、聚合與假撚知識定義大辭典</div>
+          <h2 class="section-title" itemprop="name" data-i18n="gloss.title">紡織與假撚工程專業知識定義大辭典（40+ 權威條目・Schema.org 結構化索引）</h2>
+          <p class="section-desc" itemprop="description" data-i18n="gloss.desc">
+            為協助全球紡織採購經理、面料研發工程師與搜尋引擎／AI 知識庫精準檢索，我們彙整上游石化聚合（PTA/MEG/BHET/IV）、延伸假撚物理（POY/FDY/DTY/Murata 33H/D-Y Ratio）、交絡與品管檢驗（Itemat Lab/TA1-TA9/五碼批號/丹尼支數換算）、平織與針織準備工程及 18 種經典布種定義。可使用下方搜尋框或分類標籤即時篩選：
+          </p>
+        </div>
+
+        <div class="glossary-Controls-bar">
+          <input type="search" id="glossary-search-input" class="glossary-search-input" placeholder="搜尋紡織專業術語（如：POY、DTY、PTA、IV、屋麗紗、定型紗、噴節紗、TA5、丹尼、Ne、軋別丁、村田 33H...）" oninput="window.filterGlossary && window.filterGlossary()" />
+          <div class="glossary-filter-pills" role="tablist">
+            <button type="button" class="glossary-filter-btn active" data-cat="all" onclick="window.setGlossaryCat && window.setGlossaryCat('all', this)">全部條目 (All 40)</button>
+            <button type="button" class="glossary-filter-btn" data-cat="polymer" onclick="window.setGlossaryCat && window.setGlossaryCat('polymer', this)">上游聚合與原絲 (Polymer & POY)</button>
+            <button type="button" class="glossary-filter-btn" data-cat="dty" onclick="window.setGlossaryCat && window.setGlossaryCat('dty', this)">假撚工程與紗種 (DTY Texturing)</button>
+            <button type="button" class="glossary-filter-btn" data-cat="qc" onclick="window.setGlossaryCat && window.setGlossaryCat('qc', this)">交絡、批號與品管 (QC & Coding)</button>
+            <button type="button" class="glossary-filter-btn" data-cat="weaving" onclick="window.setGlossaryCat && window.setGlossaryCat('weaving', this)">平織與針織工程 (Weaving & Knit)</button>
+            <button type="button" class="glossary-filter-btn" data-cat="fabric" onclick="window.setGlossaryCat && window.setGlossaryCat('fabric', this)">經典布種與後加工 (Fabrics)</button>
+          </div>
+        </div>
+
+        <dl class="glossary-dl-grid" id="glossary-dl-grid">
+          
+          <div class="glossary-term-item" data-glossary-cat="polymer" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-pta">
+              <span itemprop="name">PTA (Purified Terephthalic Acid) 純對苯二甲酸</span>
+              <span class="glossary-cat-tag">上游聚合 Polymer</span>
+            </dt>
+            <dd itemprop="description">
+              聚酯纖維（PET）最核心之芳香族二元酸單體，分子式 C₈H₆O₄。由石油腦提煉之對二甲苯（PX）經 Amoco 液相催化氧化與加氫精製而成，純度須達 99.98% 以上，其鐵離子與對羧基苯甲醛（4-CBA ≤ 25 ppm）含量直接決定聚酯熔體之白度與聚合度。
+              <div class="glossary-seo-meta">SEO / Technical Index: Formula: C8H6O4 | Purity ≥ 99.98% | 4-CBA ≤ 25 ppm | Upstream PET Monomer</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="polymer" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-meg">
+              <span itemprop="name">MEG / EG (Monoethylene Glycol) 纖維級乙二醇</span>
+              <span class="glossary-cat-tag">上游聚合 Polymer</span>
+            </dt>
+            <dd itemprop="description">
+              聚酯聚合之二元醇單體，分子式 HO-CH₂CH₂-OH。由乙烯經環氧化與水合反應製得，與 PTA 以莫耳比 1 : 1.15–1.25 投入酯化釜進行直接酯化反應（Direct Esterification）。紫外透光率（UV Transmittance）為纖維級 MEG 最關鍵之品管指標。
+              <div class="glossary-seo-meta">SEO / Technical Index: Formula: C2H6O2 | Molar Ratio PTA:MEG = 1:1.15~1.25 | Fiber-Grade Monomer</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="polymer" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-bhet">
+              <span itemprop="name">BHET (Bis(2-hydroxyethyl) Terephthalate) 雙羥乙基對苯二甲酸酯</span>
+              <span class="glossary-cat-tag">上游聚合 Polymer</span>
+            </dt>
+            <dd itemprop="description">
+              PTA 與 MEG 在 250–265°C、0.2–0.5 MPa 酯化反應器中脫水生成之聚酯中間體單體（酯化率 95%–98%）。BHET 隨後進入預縮聚與終縮聚反應器，在高真空下脫除乙二醇並連接成高分子量 PET 長鏈。
+              <div class="glossary-seo-meta">SEO / Technical Index: Esterification Temp: 250–265°C | Conversion: 95%–98% | Intermediate Monomer</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="polymer" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-polycondensation">
+              <span itemprop="name">Melt Polycondensation 聚酯熔融縮聚反應</span>
+              <span class="glossary-cat-tag">上游聚合 Polymer</span>
+            </dt>
+            <dd itemprop="description">
+              BHET 低聚物於 280–288°C 高溫及 < 1 mbar 高真空環境下，藉由三氧化二銻（Sb₂O₃）、鍺系或環保鈦系催化劑作用，持續脫除副產物乙二醇分子，使聚合度（DP）躍升至約 100、分子量達 Mn ≈ 19,000–21,000 g/mol 之高分子化學製程。
+              <div class="glossary-seo-meta">SEO / Technical Index: Temp: 285°C | Vacuum < 1.0 mbar | Catalyst: Sb2O3 / Ti | DP ≈ 100</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="polymer" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-iv">
+              <span itemprop="name">IV (Intrinsic Viscosity) 特性黏度 / 極限黏度</span>
+              <span class="glossary-cat-tag">上游聚合 Polymer</span>
+            </dt>
+            <dd itemprop="description">
+              衡量聚酯（PET）大分子鏈平均分子量與聚合度之核心流變指標，單位為 dL/g（於酚/四氯乙烷混合溶劑中在 25°C 測定）。衣用與織帶級 DTY 所用半消光聚酯切片或直紡熔體標準 IV 為 0.645 ± 0.012 dL/g；IV 波動超過 ±0.015 即會導致假撚解撚張力（T2）劇烈振盪與染色色差。
+              <div class="glossary-seo-meta">SEO / Technical Index: Standard Fiber IV: 0.645 ± 0.012 dL/g | High-Tenacity IV: 0.85–1.05 dL/g</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="polymer" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-cooh">
+              <span itemprop="name">Carboxyl End Group (-COOH) 聚酯端羧基含量</span>
+              <span class="glossary-cat-tag">上游聚合 Polymer</span>
+            </dt>
+            <dd itemprop="description">
+              聚酯高分子鏈末端未反應或因熱降解產生之羧基（-COOH）濃度，單位為 eq/10⁶g（或 mmol/kg）。A 級紡絲熔體須控制在 ≤ 26 eq/10⁶g；端羧基過高代表熱氧化裂解嚴重，會降低 DTY 紗線耐水解性、強伸度與高溫染整牢度。
+              <div class="glossary-seo-meta">SEO / Technical Index: A-Grade Spec: -COOH ≤ 26 eq/10⁶g | Hydrolytic & Thermal Stability Index</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="polymer" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-deg">
+              <span itemprop="name">DEG (Diethylene Glycol) 二甘醇副產物含量</span>
+              <span class="glossary-cat-tag">上游聚合 Polymer</span>
+            </dt>
+            <dd itemprop="description">
+              酯化與縮聚過程中兩分子乙二醇醚化副反應生成之二甘醇鏈段（-O-CH₂CH₂-O-CH₂CH₂-O-），通常佔聚酯重量 0.8–1.2 wt%。DEG 含量增加會使聚酯玻璃轉移溫度（Tg）與熔點（Tm ≈ 256°C）下降，提升分散染料上色率但若波動過大將引發嚴重染色橫條（Barre）。
+              <div class="glossary-seo-meta">SEO / Technical Index: Standard Range: 0.8–1.2 wt% | Lowers Tg & Melting Point Tm | Dyeing Kinetics Factor</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="polymer" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-tio2">
+              <span itemprop="name">TiO₂ Delustering (SD / FD / BR) 二氧化鈦消光與光澤工程</span>
+              <span class="glossary-cat-tag">上游聚合 Polymer</span>
+            </dt>
+            <dd itemprop="description">
+              於縮聚階段添加粒徑 0.2–0.4 μm 之銳鈦礦型二氧化鈦（Anatase TiO₂）微粒以調控纖維折射與漫射光澤：大有光（BR, TiO₂ < 0.05%）呈鏡面絲緞亮澤；半消光（SD, TiO₂ 0.25–0.35%）呈溫潤內斂光澤；全消光（FD, TiO₂ 2.0–2.5%）呈天然棉霧面且具抗 UV 遮蔽機能。
+              <div class="glossary-seo-meta">SEO / Technical Index: BR (<0.05% TiO2) | SD (0.30% TiO2) | FD (2.20% TiO2) | Anatase Refractive Index 2.55</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="polymer" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-poy">
+              <span itemprop="name">POY (Partially Oriented Yarn) 聚酯半延伸絲 / 預取向絲</span>
+              <span class="glossary-cat-tag">上游聚合 Polymer</span>
+            </dt>
+            <dd itemprop="description">
+              聚酯熔體經噴絲板擠出後，以 3,000–3,500 m/min 高速紡絲捲繞而成之未完全延伸原絲。其結晶度僅約 22%–28%、斷裂伸長率高達 110%–135%（如南亞 POY 實測伸度 126%、強度 3.05 g/d）、沸水收縮率高達 50% 以上，且具室溫物理老化不穩定性，不可直接織布，必須作為 DTY 假撚機之原料絲。
+              <div class="glossary-seo-meta">SEO / Technical Index: Spinning Speed: 3,000–3,500 m/min | Elongation: 110–135% | Crystallinity: 22–28%</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="polymer" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-fdy">
+              <span itemprop="name">FDY (Fully Drawn Yarn) 聚酯全延伸絲 / 原絲</span>
+              <span class="glossary-cat-tag">上游聚合 Polymer</span>
+            </dt>
+            <dd itemprop="description">
+              在紡絲過程中導入熱羅拉同步完成高倍拉伸與熱定型（紡速 4,500–5,500 m/min）之平直長絲。結晶度高、伸度低（20–35%），但單絲呈平行筆直排列、無三維捲曲蓬鬆度，手感較扁平冰冷且具鏡面反光，多用於里布、塔夫塔或與 DTY 交織。
+              <div class="glossary-seo-meta">SEO / Technical Index: Spinning Speed: 4,500–5,500 m/min | Flat Uncrimped Filament | High Gloss</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="dty" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-dty">
+              <span itemprop="name">DTY (Draw Textured Yarn) 延伸假撚加工絲</span>
+              <span class="glossary-cat-tag">假撚工程 DTY</span>
+            </dt>
+            <dd itemprop="description">
+              以 POY 半延伸原絲為原料，在高速假撚機（如日本村田 Murata 33H）上同步進行「熱拉伸（Drawing, DR 1.65–1.72x）」與「假撚變形（False-Twist Texturing, 18,000 RPM）」製成之立體捲曲蓬鬆長絲。兼具高斷裂強度（4.2–4.8 g/d）、低沸水收縮率（< 3.5%）、天然纖維般豐滿手感與優異吸濕透氣性。
+              <div class="glossary-seo-meta">SEO / Technical Index: POY + Simultaneous Draw & False-Twist | Tenacity: 4.2–4.8 g/d | Elongation: 18–25%</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="dty" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-set-yarn">
+              <span itemprop="name">Set Yarn (Two-Heater Heat-Set DTY) 定型紗</span>
+              <span class="glossary-cat-tag">假撚工程 DTY</span>
+            </dt>
+            <dd itemprop="description">
+              經過第一熱箱（變形熱箱 195–220°C）加撚定型與假撚器解撚後，再導入第二熱箱（定型熱箱 165–195°C，搭配 3%–8% 超餵率 Overfeed）進行二次無張力熱鬆弛之 DTY 加工絲。能消除約 60%–70% 殘餘回縮應力與扭矩，尺寸極度穩定、布面平整挺括，為翊豐企業 75丹/100丹/150丹/300丹 主力產品。
+              <div class="glossary-seo-meta">SEO / Technical Index: 1st Heater (210°C) + 2nd Heater (180°C) | Crimp Contraction CC: 8–14% | Dimensional Stability</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="dty" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-woolly-yarn">
+              <span itemprop="name">Woolly Yarn (One-Heater High-Stretch DTY) 屋麗紗 / 高彈絲</span>
+              <span class="glossary-cat-tag">假撚工程 DTY</span>
+            </dt>
+            <dd itemprop="description">
+              僅經過第一熱箱高溫假撚熱定型與冷卻解撚，關閉或不經第二熱箱（Non-Set）直接上油捲繞之高彈性蓬鬆加工絲。完整保留微米單絲最高之螺旋捲曲位能，捲曲收縮率（CC）高達 25%–38%，觸感如天然羊毛般豐厚蓬鬆，廣泛用於 150丹/300丹 刷毛搖粒絨、運動護具、織襪與鬆緊織帶。
+              <div class="glossary-seo-meta">SEO / Technical Index: 1st Heater Only (Non-Set) | High Crimp Contraction CC: 25–38% | Wool-Like Lofty Handfeel</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="dty" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-slub-yarn">
+              <span itemprop="name">Slub Fancy DTY 噴節紗 / 舞龍紗 / 竹節花式紗</span>
+              <span class="glossary-cat-tag">假撚工程 DTY</span>
+            </dt>
+            <dd itemprop="description">
+              於假撚拉伸區透過電磁離合器或伺服羅拉週期性改變超餵比（Overfeed Ratio），或結合高壓間歇氣流噴嘴，使紗線縱向產生粗細交替、未完全拉伸之粗節（Slub）與細基紗段。染色後因粗節非晶區比例高、吸色深，呈現自然立體深淺雙色麻花與亞麻竹節肌理（75丹/100丹/150丹/300丹）。
+              <div class="glossary-seo-meta">SEO / Technical Index: Variable Overfeed + Intermittent Air-Jet | Two-Tone Marled & Linen-Like Slub Texture</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="dty" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-false-twist">
+              <span itemprop="name">False-Twist Principle 假撚物理原理</span>
+              <span class="glossary-cat-tag">假撚工程 DTY</span>
+            </dt>
+            <dd itemprop="description">
+              1933 年由 Finlayson 與 Happe 奠定之紡織物理定律：對兩端握持運動中之絲條在中間點（假撚器）施加強烈扭轉時，假撚器上游產生高密度真撚（每米 2,500–3,800 撚），進入熱箱軟化結晶鎖定螺旋形貌；絲條通過假撚器瞬間正負撚數完美抵銷（淨撚度歸零），但每根單絲永久保留三維螺旋捲曲記憶。
+              <div class="glossary-seo-meta">SEO / Technical Index: Upstream Twist + Thermal Glass-Transition Lock + Downstream Untwist = 3D Helical Crimp</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="dty" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-murata-33h">
+              <span itemprop="name">Murata 33H Mach Crimper 日本村田 33H 高速摩擦假撚機</span>
+              <span class="glossary-cat-tag">假撚工程 DTY</span>
+            </dt>
+            <dd itemprop="description">
+              日本村田機械（Murata Machinery）研發之經典工業級高速延伸假撚機型，亦為翊豐企業線西廠與鹿港廠主力機群（H-1 至 H-6 台）。配備三軸皮帶/圓盤摩擦假撚器、精密 W 型磁導、33H-026 捲取滑塊與聯苯氣相熱箱，以極高之張力均勻度與低毛羽率享譽全球。
+              <div class="glossary-seo-meta">SEO / Technical Index: Murata Machinery (Muratec) 33H | Tri-Axis Friction Twister | Biphenyl Vapor Heater</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="dty" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-friction-disc">
+              <span itemprop="name">Tri-Axis Friction Disc Unit (1-7-1) 三軸摩擦盤假撚器</span>
+              <span class="glossary-cat-tag">假撚工程 DTY</span>
+            </dt>
+            <dd itemprop="description">
+              現代高速假撚機之核心施撚機構，由三根平行軸心以交錯重疊（如 1-7-1 排列：1片導向盤 + 7片工作盤 + 1片導出盤）構成。採用高硬度氧化鋁陶瓷（Ceramic）或耐溫聚氨酯（PU）盤片，以 12,000–18,000 RPM 高速旋轉對絲條表面施予切向施撚力與軸向推進力。
+              <div class="glossary-seo-meta">SEO / Technical Index: 1-7-1 Disc Configuration | Ceramic / PU | 12,000–18,000 RPM | D/Y Ratio ≈ 1.8–2.1</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="dty" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-dy-ratio">
+              <span itemprop="name">D/Y Ratio (Disc-to-Yarn Speed Ratio) 盤面線速度與絲速比</span>
+              <span class="glossary-cat-tag">假撚工程 DTY</span>
+            </dt>
+            <dd itemprop="description">
+              摩擦盤外緣切線速度（D）與加工絲行進線速度（Y）之比值，標準控制在 1.80–2.15。D/Y 比直接決定施撚效率、加撚張力（T1）與解撚張力（T2）比值：D/Y 過低會造成逃撚（Untwisted Spots）與緊點；D/Y 過高則導致雪花屑（Snow）與斷絲毛羽。
+              <div class="glossary-seo-meta">SEO / Technical Index: Formula: D/Y = V_disc / V_yarn | Optimal Range: 1.80–2.15 | Controls T2/T1 Tension Ratio</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="dty" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-t1-t2">
+              <span itemprop="name">T1 / T2 Tension Ratio 加撚張力與解撚張力比</span>
+              <span class="glossary-cat-tag">假撚工程 DTY</span>
+            </dt>
+            <dd itemprop="description">
+              假撚器入口端之加撚張力（T1）與出口端之解撚張力（T2）比值。理想穩態假撚製程要求 T2/T1 控制於 0.90–1.05 之間；線上張力感測系統（如 Unitens）以毫秒級頻率監控 T2 波動，一旦超出上下限即自動判別為異常錠位並剔除降等。
+              <div class="glossary-seo-meta">SEO / Technical Index: T1: Pre-Twister Tension | T2: Post-Twister Untwisting Tension | Target T2/T1 ≈ 0.95–1.05</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="dty" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-biphenyl-heater">
+              <span itemprop="name">Biphenyl-Diphenyl Oxide Vapor Heater 聯苯氣相熱媒熱箱</span>
+              <span class="glossary-cat-tag">假撚工程 DTY</span>
+            </dt>
+            <dd itemprop="description">
+              第一熱箱採用聯苯（Biphenyl, 26.5%）與二苯醚（Diphenyl Oxide, 73.5%）共晶混合物（Dowtherm A）於密閉腔體內蒸發潛熱加熱。在 2.0–2.5 公尺長之熱箱軌道內實現 ±0.3°C 極致均溫，使運動中絲條迅速跨越聚酯玻璃轉移溫度（Tg ≈ 75–80°C）並完成微晶重組。
+              <div class="glossary-seo-meta">SEO / Technical Index: Eutectic Biphenyl/Diphenyl Oxide | Temp: 190–225°C | Uniformity: ±0.3°C</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="dty" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-cooling-plate">
+              <span itemprop="name">Cooling Plate (Stabilization Zone) 弧形冷卻板定型區</span>
+              <span class="glossary-cat-tag">假撚工程 DTY</span>
+            </dt>
+            <dd itemprop="description">
+              位於第一熱箱出口與摩擦假撚器入口之間（長度 1.1–1.5 公尺）之金屬散熱導軌。將 210°C 高溫軟化絲條在進入假撚器解撚前急速冷卻至 50°C 以下（低於 Tg 玻璃轉移溫度），確保螺旋扭轉應力被結晶晶格剛性鎖定，並抑制超高速假撚張力振盪（Surging）。
+              <div class="glossary-seo-meta">SEO / Technical Index: Cooling Temp: 210°C → < 50°C (Below Tg) | Locks Helical Crystalline Memory</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="dty" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-sz-twist">
+              <span itemprop="name">S-Twist / Z-Twist & S+Z Zero-Torque Yarn S撚 / Z撚與雙股無扭矩合股紗</span>
+              <span class="glossary-cat-tag">假撚工程 DTY</span>
+            </dt>
+            <dd itemprop="description">
+              依摩擦盤旋轉方向區分為順時針 Z 撚與逆時針 S 撚。單股假撚絲因殘留微幅扭轉應力，在單面平針織布（Single Jersey）中易產生線圈歪斜（Spirality）；將一股 S 撚與一股 Z 撚透過空氣交絡併合成雙股無扭紗（如 150D/48F×2 或 75D/36F×2，批號首碼 N/P/Q/R），即可使正反扭矩 100% 抵銷，布面絕對垂直平整。
+              <div class="glossary-seo-meta">SEO / Technical Index: S-Twist (CCW) + Z-Twist (CW) = Zero-Torque 2-Ply DTY | Eliminates Fabric Spirality</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="dty" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-acy-scy">
+              <span itemprop="name">ACY / SCY (Air & Spun Covered Spandex Yarn) 空氣包覆紗與機械包覆紗</span>
+              <span class="glossary-cat-tag">假撚工程 DTY</span>
+            </dt>
+            <dd itemprop="description">
+              以預牽伸之氨綸（Spandex / Lycra）彈性絲為芯絲，外層以 DTY 聚酯加工絲進行包覆之複合彈力紗。空氣包覆紗（ACY，空包）利用高壓噴嘴將 DTY 與氨綸交絡出節律網路點，產能高、手感柔滑；機械包覆紗（SCY，機包）則以空心錠旋轉將 DTY 物理加撚纏繞於芯絲上，布面平整挺括且不露白芯。
+              <div class="glossary-seo-meta">SEO / Technical Index: Core: Spandex (Draft 2.5–3.8x) + Sheath: DTY 75D/150D | ACY (Air-Jet) vs SCY (Mechanical TPM)</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="dty" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-steaming">
+              <span itemprop="name">Yarn Steaming (Autoclave Conditioning) 蒸紗定型處理</span>
+              <span class="glossary-cat-tag">假撚工程 DTY</span>
+            </dt>
+            <dd itemprop="description">
+              將加撚紗或高殘餘扭矩加工絲置入真空飽和蒸氣蒸紗釜（Autoclave）中，以 75–115°C 負壓濕熱蒸氣穿透筒紗內外層，使聚酯大分子鏈氫鍵與內應力徹底鬆弛（Twist Setting），防止下游整經與退繞時發生紗圈糾結（Snarling / Kinking）並提升染色均一性。
+              <div class="glossary-seo-meta">SEO / Technical Index: Vacuum Saturated Steam 75–115°C | Eliminates Residual Torque & Snarling</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="qc" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-intermingling">
+              <span itemprop="name">Intermingling / Entanglement (NIM / SIM / MIM / HIM) 空氣噴氣交絡網路度</span>
+              <span class="glossary-cat-tag">交絡與品管 QC</span>
+            </dt>
+            <dd itemprop="description">
+              利用壓縮空氣噴嘴（Intermingling Jet，壓力 1.5–4.5 bar）對多根平行微米單絲施予橫向湍流衝擊，使單絲形成週期性集束纏繞節點（Knot）與蓬鬆開纖腹段（Open Belly）：NIM 無網（0–10 節/m）、SIM 輕網（35–55 節/m）、MIM 中網（60–85 節/m）、HIM 重網（95–130 節/m，免上漿平織經紗專用）。
+              <div class="glossary-seo-meta">SEO / Technical Index: NIM (0–10/m) | SIM (35–55/m) | MIM (60–85/m) | HIM (95–130/m Sizing-Free Warp)</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="qc" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-interlace-retention">
+              <span itemprop="name">Interlace Retention Stability (TA1–TA9) 交絡噴節牢度</span>
+              <span class="glossary-cat-tag">交絡與品管 QC</span>
+            </dt>
+            <dd itemprop="description">
+              引用力麗企業彰化一廠黃元龍技術文獻：指加工絲交絡節點抵抗拉伸解開之緊密程度，以德國 Enka Tecnica Itemat Lab TSI 儀器測定。公式為：[(每米原交絡節數 − 延伸後脫節數) ÷ 每米原交絡節數] × 100%。代號 TA1–TA9 代表牢度等級：如 150/48 TA5（牢度 46–55%，節點較鬆弛、織物手感極柔軟）vs 150/48 TA9（牢度 86–95%，節點緊密不脫節、適合高速經紗織造）。
+              <div class="glossary-seo-meta">SEO / Technical Index: Formula: [(N0 - N_unraveled) / N0] × 100% | TA1 (0–15%) to TA5 (46–55%) to TA9 (86–95%)</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="qc" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-itemat-lab">
+              <span itemprop="name">Enka Tecnica Itemat Lab TSI 德國交絡節數與牢度雷射掃描儀</span>
+              <span class="glossary-cat-tag">交絡與品管 QC</span>
+            </dt>
+            <dd itemprop="description">
+              國際化纖大廠標準配備之精密交絡檢測儀器。透過第一/二/三圓筒羅拉（G1/G2/G3）設定精準延伸比（Elongation 0.0%–6.0%）與張力器（FZK1/FZK2），由 IMK 交絡掃描頭感測絲條厚度峰值（Level 參數），自動繪製重交絡/輕交絡波形圖、節點間距變異數（CV%）與最大開纖距離（Max. OL cm）。
+              <div class="glossary-seo-meta">SEO / Technical Index: Instrument: Enka Tecnica Itemat Lab | Metrics: Interlaces/m, Stability %, Mean OL & Max KL</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="qc" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-5digit-code">
+              <span itemprop="name">Year Fawn 5-Digit DTY Lot Coding System 翊豐 DTY 五碼批號編碼原則 (100.3.7)</span>
+              <span class="glossary-cat-tag">交絡與品管 QC</span>
+            </dt>
+            <dd itemprop="description">
+              翊豐企業線西廠品管室制定之標準五碼批號系統：第 1 碼代表紗種與噴節/定型區分（A=單股輕噴、B=單股中噴、C=單股重噴、D=單股定型、E/F/G=噴節+定型、H/I=有光BR、K/L=陽離子CD、M=原液黑BK、N/P/Q/R=雙股無扭紗）；第 2 碼代表丹尼數（1=30D, 2=50D, 3=75D, 4=100D, 5=150D, 6=300D, 7=450D, 8=600D）；第 3 碼代表條數（1=24F, 2=36F, 3=48F, 4=72F, 5=96F, 6=144F, 7=192F, 8=216F, 9=288F）；第 4–5 碼為流水號與等級/撚向（01–99 為 A 級品，B 為 B 級，S 為 S 撚）。
+              <div class="glossary-seo-meta">SEO / Technical Index: Archive 100.3.7 | Ex: #A3201 = Single-Ply SIM 75D/36F A-Grade | #N5401 = 2-Ply Zero-Torque 150D/72F</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="qc" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-denier">
+              <span itemprop="name">Denier (D / 丹尼) 再生與合成長纖定長制纖度單位</span>
+              <span class="glossary-cat-tag">交絡與品管 QC</span>
+            </dt>
+            <dd itemprop="description">
+              國際長纖加工絲最核心之粗細度（線密度）定長制單位：定義為每 9,000 公尺長之紗線所具有的公克重量（g / 9,000m）。例如 9,000 公尺重 150 公克即為 150 丹（150D）；丹尼數越小代表紗線越纖細輕薄（75D），丹尼數越大代表紗線越粗壯厚實（300D）。與分特（dtex）換算為：1 Denier = 1.111 dtex。
+              <div class="glossary-seo-meta">SEO / Technical Index: Formula: D = (Weight in g / Length in m) × 9000 | 75D / 100D / 150D / 300D</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="qc" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-tex-dtex">
+              <span itemprop="name">Tex & dtex (德克士 / 分特) 國際標準公制定長纖度單位</span>
+              <span class="glossary-cat-tag">交絡與品管 QC</span>
+            </dt>
+            <dd itemprop="description">
+              ISO 國際標準組織通用之定長制線密度單位：Tex 定義為每 1,000 公尺紗線之公克重量（g / 1,000m）；dtex（分特）定義為每 10,000 公尺紗線之公克重量（g / 10,000m）。換算公式：dtex = Denier × (10 / 9) ≈ Denier × 1.111（例如 150D = 167 dtex，75D = 83 dtex，300D = 333 dtex）。
+              <div class="glossary-seo-meta">SEO / Technical Index: 1 Tex = 1g / 1,000m | 1 dtex = 1g / 10,000m | 150D = 166.7 dtex = 16.67 Tex</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="qc" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-ne-nm">
+              <span itemprop="name">Ne (English Cotton Count 英制棉支) & Nm (Metric Count 公制支數)</span>
+              <span class="glossary-cat-tag">交絡與品管 QC</span>
+            </dt>
+            <dd itemprop="description">
+              短纖紡紗常用之定重制單位（引用紡織中心鄧永順《梭織實務介紹》）：英制支數（Ne）指 1 磅重之紗線長度為 840 碼的多少倍，即為多少支（S）；公制支數（Nm）指 1 公斤重之紗線長度為 1,000 公尺的多少倍。支數越大代表紗越細，與丹尼（D）換算公式為：Denier = 5315 ÷ Ne = 9000 ÷ Nm（例如 150D 約當 35.4 Ne 英支；75D 約當 70.8 Ne 英支）。
+              <div class="glossary-seo-meta">SEO / Technical Index: Formula: D = 5315 / Ne = 9000 / Nm | 75D ≈ 71S (Ne) | 150D ≈ 35.4S (Ne) | 300D ≈ 17.7S (Ne)</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="qc" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-dpf">
+              <span itemprop="name">DPF (Denier Per Filament) 單絲纖度與微米細度</span>
+              <span class="glossary-cat-tag">交絡與品管 QC</span>
+            </dt>
+            <dd itemprop="description">
+              總丹尼數（Total Denier）除以單絲根數（Filaments, F）所得之每根微米單絲粗細度：DPF = D ÷ F。DPF > 3.0（如 150D/36F, DPF 4.17）剛性強、耐磨硬挺；DPF 1.5–3.0（如 150D/48F, DPF 3.12）為標準泛用型；DPF ≤ 1.0（如 75D/72F, 150D/144F, DPF 1.04）稱為超細丹尼（Micro-filament），具備蠶絲般極致柔順與高毛細排汗力。
+              <div class="glossary-seo-meta">SEO / Technical Index: Formula: DPF = Total Denier / Filament Count | Microfiber: DPF ≤ 1.0</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="qc" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-cc-cs-cr">
+              <span itemprop="name">CC / CS / CR (Crimp Contraction, Stability & Rigidity) 捲曲收縮率與伸縮復原率</span>
+              <span class="glossary-cat-tag">交絡與品管 QC</span>
+            </dt>
+            <dd itemprop="description">
+              依 DIN 53840 / ASTM D4031 標準測定 DTY 蓬鬆度與回彈力之關鍵物性：將紗束於熱水或乾熱處理後分別在輕負荷（0.002 cN/dtex）與重負荷（0.1 cN/dtex）下量測長度差。翊豐 A 級 300D 檢驗報告中伸縮復原率（Crimp Rigidity）實測達 24.3%（標準 25.5 ± 2.5%），直接決定織物彈性與豐滿度。
+              <div class="glossary-seo-meta">SEO / Technical Index: Set DTY CC: 8–14% | Woolly DTY CC: 25–38% | Year Fawn COA Crimp Rigidity: 24.3%</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="qc" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-bws">
+              <span itemprop="name">BWS (Boiling Water Shrinkage) 沸水收縮率</span>
+              <span class="glossary-cat-tag">交絡與品管 QC</span>
+            </dt>
+            <dd itemprop="description">
+              紗線於 100°C 沸水中無張力處理 15–30 分鐘後之長度收縮百分比。POY 原絲沸水收縮率高達 50% 以上；經翊豐二熱箱精密熱鬆弛之定型紗（Set DTY）沸水收縮率嚴格控制在 2.0%–3.5% 以內，確保下游胚布經高溫染整後幅寬與克重（GSM）精準零縮水。
+              <div class="glossary-seo-meta">SEO / Technical Index: POY BWS > 50% → Year Fawn Heat-Set DTY BWS < 3.5% | Dimensional Precision</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="qc" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-opu">
+              <span itemprop="name">OPU (Oil Pick Up) 紡絲與假撚含油率控制</span>
+              <span class="glossary-cat-tag">交絡與品管 QC</span>
+            </dt>
+            <dd itemprop="description">
+              DTY 捲繞前透過油輪塗佈抗靜電平滑油劑（Coning Oil）佔紗線乾重之百分比（索氏萃取法或 NMR 核磁共振測定）。翊豐 A 級檢驗報告實測 OPU 為 1.38%（標準 1.50 ± 0.50%）；精準油份能降低動摩擦係數（μd < 0.24）、消除高速整經與圓編織造時之高達數千伏特靜電並抑制白粉產生。
+              <div class="glossary-seo-meta">SEO / Technical Index: Year Fawn COA OPU: 1.38% (Spec 1.50 ± 0.50%) | Anti-Static & Low Friction Coefficient</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="qc" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-mk-grade">
+              <span itemprop="name">M/K Knit-Sleeve Dyeing Uniformity (AATCC Gray Scale 4.5) 圓編襪筒判色檢驗</span>
+              <span class="glossary-cat-tag">交絡與品管 QC</span>
+            </dt>
+            <dd itemprop="description">
+              假撚廠最嚴苛之出貨前防色差測試：從每個生產批號（Lot）逐錠抽取筒紗，以實驗室單頭圓編機織成連續試驗襪筒（Knit Sleeve），投入競爭性敏感分散染料（如 Disperse Blue 79 / E-4R）染浴中染色，於 D65 標準光源箱下比對灰卡（AATCC Gray Scale），必須達 4.5 級以上無橫條色差（Barre）方准貼上鹿牌 A 級標籤出貨。
+              <div class="glossary-seo-meta">SEO / Technical Index: 100% Spindle-by-Spindle Knit-Sleeve Dyeing Test | AATCC Gray Scale ≥ Grade 4.5</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="qc" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-oeko-tex">
+              <span itemprop="name">OEKO-TEX® Standard 100 & GRS 國際無毒與再生環保紡織認證</span>
+              <span class="glossary-cat-tag">交絡與品管 QC</span>
+            </dt>
+            <dd itemprop="description">
+              引用翊豐典藏《OEKO-Tex 測試程序與一般/特殊條款（CNS）》：全球最具公信力之生態紡織品安全標章，嚴格檢測 pH 值、游離甲醛、重金屬、禁用偶氮染料、有機錫與致敏分散染料（分第 I 類嬰幼兒至第 IV 類家飾標準），確保聚酯加工絲對人體肌膚完全無毒親膚。
+              <div class="glossary-seo-meta">SEO / Technical Index: OEKO-TEX Standard 100 Class I–IV | Zero Harmful Substances | GRS Recycled PET Ready</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="weaving" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-warping">
+              <span itemprop="name">Warping (Sectional & Beam Warping) 整經與併經工程</span>
+              <span class="glossary-cat-tag">平織與針織 Weaving/Knit</span>
+            </dt>
+            <dd itemprop="description">
+              引用紡織中心鄧永順《梭織實務介紹》：依設計布幅與經密將數百至數千顆筒子架（Creel）上的 DTY 筒紗，以完全均一之張力平行排列捲繞於經軸（Warp Beam）上之關鍵準備工程。分為分條整經機（Sectional Warper，如 H420，適合色織與多樣少量）與分批/轉鼓整經機（Beam Warper，適合大批量素色胚布）。
+              <div class="glossary-seo-meta">SEO / Technical Index: Creel Tension Uniformity | Sectional Warping (H420) vs Direct Beam Warping</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="weaving" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-sizing">
+              <span itemprop="name">Filament Sizing vs. HIM Sizing-Free Weaving 漿紗工程與重網免漿革命</span>
+              <span class="glossary-cat-tag">平織與針織 Weaving/Knit</span>
+            </dt>
+            <dd itemprop="description">
+              傳統無撚或輕網長絲作為經紗時，須經單紗漿紗機塗佈 PVA（聚乙烯醇）、澱粉或壓克力系糊劑以貼伏毛羽並抗綜絖摩擦，織後再耗費大量熱水與化學藥劑退漿。改用翊豐生產之高牢度重網定型紗（HIM Set DTY，100–120 節/m，TA8–TA9 級）即可實現「免上漿（Sizing-Free）直接整經織造」，大幅節水減碳並降低織布成本。
+              <div class="glossary-seo-meta">SEO / Technical Index: Traditional PVA/Acrylic Sizing vs. Year Fawn HIM (TA8–TA9) Sizing-Free Direct Weaving</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="weaving" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-5motions">
+              <span itemprop="name">Five Primary & Secondary Motions of Weaving 梭織機織造五大運動</span>
+              <span class="glossary-cat-tag">平織與針織 Weaving/Knit</span>
+            </dt>
+            <dd itemprop="description">
+              梭織布機交織經緯紗之五大核心機械運動（包含三大主運動与二大副運動）：1. 開口（Shedding：綜框依組織圖上下分開經紗形成梭口，凸輪/多臂 Dobby 8–28片/電子提花 Jacquard）；2. 投緯/引緯（Picking：噴水、噴氣或劍桅將緯紗引入梭口）；3. 打緯（Beating-up：鋼筘將緯紗推向織口形成胚布）；4. 送經（Let-off：經軸恆張力釋放經紗）；5. 捲取（Take-up：依設定緯密將胚布捲繞成布捲）。
+              <div class="glossary-seo-meta">SEO / Technical Index: 1. Shedding → 2. Picking → 3. Beating-up → 4. Let-off → 5. Take-up</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="weaving" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-water-air-rapier">
+              <span itemprop="name">Water-Jet, Air-Jet & Rapier Looms 噴水織機、噴氣織機與劍桅無梭織機</span>
+              <span class="glossary-cat-tag">平織與針織 Weaving/Knit</span>
+            </dt>
+            <dd itemprop="description">
+              現代高速無梭織機三大主流：1. 噴水織機（Water-Jet Loom，車速 800–1,200 RPM，專織疏水性聚酯 DTY 長纖布，效率最高、成本最低）；2. 噴氣織機（Air-Jet Loom，利用壓縮空氣引緯，適合中高密機能布與竹節紗）；3. 劍桅織機（Rapier Loom，如德國 DORNIER、義大利 Somet Thema 11、VAMATEX，選緯多達 8–16 色，最適合多色提花、家飾布與粗丹尼工業布）。
+              <div class="glossary-seo-meta">SEO / Technical Index: Water-Jet (800–1200 RPM Hydrophobic PET) | Air-Jet | Rapier (DORNIER / Somet / VAMATEX)</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="weaving" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-circular-knitting">
+              <span itemprop="name">Circular Knitting (Single Jersey, Interlock & Pike) 緯編圓編針織工程</span>
+              <span class="glossary-cat-tag">平織與針織 Weaving/Knit</span>
+            </dt>
+            <dd itemprop="description">
+              引用龍海如主編《針織學》：利用圓編針織機（24G–40G 高針數，72–120 路餵紗口）之舌針（Latch Needle）與沉降片（Sinker）將 DTY 加工絲退繞彎曲成線圈（Loop）並相互串套成布。針織用紗要求極低之解撚扭矩、均勻之輕交絡（NIM/SIM）與穩定含油率（OPU 1.5%），廣泛生產單面布、雙面布（Interlock）、PK 網眼布與刷毛絨布。
+              <div class="glossary-seo-meta">SEO / Technical Index: 24G–40G Circular Knitting | Latch Needle & Sinker Loop Formation | NIM/SIM Low-Torque DTY</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="weaving" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-narrow-webbing">
+              <span itemprop="name">Narrow Fabric Needle Loom & Braiding 鹿港窄幅高速無梭織帶與走馬編織</span>
+              <span class="glossary-cat-tag">平織與針織 Weaving/Knit</span>
+            </dt>
+            <dd itemprop="description">
+              彰化鹿港與線西最具全球競爭力之特色產業：採用瑞士 Jakob Müller 等超高速無梭鉤針織帶機（1,200–2,500 RPM）或走馬編織機（Braiding Machine），以 150D/48F、300D/96F 或合股 600D 之屋麗紗與重網定型紗，生產箱包背包織帶、汽車安全帶、鞋帶、醫療護具鬆緊帶與提花商標帶。
+              <div class="glossary-seo-meta">SEO / Technical Index: 1,200–2,500 RPM High-Speed Needle Looms | 150D / 300D / 600D Webbing, Elastics & Shoe Laces</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="fabric" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-plain-twill-satin">
+              <span itemprop="name">Plain, Twill & Satin Weaves (三原組織：平紋、斜紋、緞紋)</span>
+              <span class="glossary-cat-tag">布種與後加工 Fabric</span>
+            </dt>
+            <dd itemprop="description">
+              梭織物構造之三大基礎組織：1. 平紋（Plain Weave, 1/1）：經緯紗一上一下交織，交錯點最多、布身最緊密硬挺（如塔夫塔、府綢、牛津布）；2. 斜紋（Twill Weave, 2/1, 2/2, 3/1）：經緯交錯點連續斜向移位形成 45° 或急斜紋路，密度高且耐磨垂墜（如軋別丁、嗶嘰、斜紋卡其）；3. 緞紋（Satin Weave, 5枚/8枚）：飛數大、浮長線長，布面呈現極致平滑光澤與柔軟垂墜感（如色丁緞、禮服呢）。
+              <div class="glossary-seo-meta">SEO / Technical Index: Three Fundamental Weaves: Plain (1/1) | Twill (2/1, 2/2, 3/1) | Satin (5-Harness / 8-Harness)</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="fabric" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-gaberdine-serge">
+              <span itemprop="name">Gaberdine (軋別丁) & Serge (嗶嘰) 堅實耐用斜紋織物</span>
+              <span class="glossary-cat-tag">布種與後加工 Fabric</span>
+            </dt>
+            <dd itemprop="description">
+              引用紡織中心鄧永順《梭織實務介紹》：軋別丁（Gaberdine）採 2/1 或 2/2 斜紋、高經密低緯密設計，表面呈現清晰之 63° 急斜紋，手感硬挺、防風防潑水且極度耐磨，常以 150D/48F 與 300D/96F 定型紗織造風衣、軍警制服與西裝褲；嗶嘰（Serge）則為經緯密接近之 2/2 45° 正則斜紋，手感柔和易裁製，為學生制服與商務裙褲大宗布料。
+              <div class="glossary-seo-meta">SEO / Technical Index: Gaberdine (Steep Twill 63°, High Warp Density) | Serge (45° 2/2 Regular Twill) | 150D/300D Set DTY</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="fabric" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-georgette-amunzen-palace">
+              <span itemprop="name">Georgette (喬其紗)、Amunzen (梨地) & Palace (法式宮廷綢) 垂墜縐織物</span>
+              <span class="glossary-cat-tag">布種與後加工 Fabric</span>
+            </dt>
+            <dd itemprop="description">
+              高級女裝三大垂墜感長纖織物（引用《梭織實務介紹》）：1. Georgette（喬其紗/雪紡縐）：經緯均採 75D 強撚單紗以 2S2Z 一正一反撚向交互排列，精練後布面呈現均勻細緻凹凸沙感與飄逸垂墜性；2. Amunzen（阿姆曾/梨地縐）：採用梨面變化組織配 75D/100D/150D 定型紗，表面似梨皮顆粒且抗皺；3. Palace（原名法國 Palace de Chine 中國絲綢）：經紗採無撚/低撚 75D DTY、緯紗採強撚紗，呈現細微橫向絲綢縐折。
+              <div class="glossary-seo-meta">SEO / Technical Index: 75D / 100D Fine DTY | Georgette (2S2Z Crepe) | Amunzen (moss crepe) | Palace de Chine</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="fabric" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-crepon-seersucker-chiffon">
+              <span itemprop="name">Crepon / Yoryu (楊柳布)、Seersucker (泡泡布) & Chiffon (雪紡)</span>
+              <span class="glossary-cat-tag">布種與後加工 Fabric</span>
+            </dt>
+            <dd itemprop="description">
+              夏日透氣輕薄女裝代表織物：楊柳布（Crepon / Yoryu）經紗用 75D 定型紗、緯紗採強撚紗交織，精練縮水後產生縱向清晰如柳條般之立體縐折；泡泡布（Seersucker）利用雙經軸高低張力差或不同收縮率 DTY（定型紗配高收縮紗）織出立體不貼膚泡泡條紋；雪紡（Chiffon）則以 75D 細丹尼平紋低密織造出輕盈半透明質感。
+              <div class="glossary-seo-meta">SEO / Technical Index: 75D/36F & 75D/72F Set DTY | Yoryu Longitudinal Crinkle | Seersucker | Chiffon</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="fabric" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-oxford-taffeta-poplin">
+              <span itemprop="name">Oxford (牛津布)、Taffeta (塔夫塔綢) & Poplin (府綢)</span>
+              <span class="glossary-cat-tag">布種與後加工 Fabric</span>
+            </dt>
+            <dd itemprop="description">
+              功能性與戶外大宗平織布：牛津布（Oxford）採用經緯重平或方平組織（Basket Weave），以 150D 或 300D/96F DTY 織造，布體強韌透氣且抗撕裂，廣泛用於背包帳篷與機能襯衫；塔夫塔（Taffeta）以 75D/36F 高密平紋織造，布身密實輕薄，為羽絨衣防絨膽布、風衣與高級里布首選；府綢（Poplin）採經密明顯高於緯密之細經粗緯平紋，表面呈現細緻菱形顆粒。
+              <div class="glossary-seo-meta">SEO / Technical Index: Oxford (150D/300D Basket Weave) | Taffeta (75D High-Density Plain) | Poplin</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="fabric" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-pique-ottoman-dobby">
+              <span itemprop="name">Pique (網眼珠地布)、Ottoman (奧圖曼橫稜布) & Dobby (多臂幾何提花)</span>
+              <span class="glossary-cat-tag">布種與後加工 Fabric</span>
+            </dt>
+            <dd itemprop="description">
+              立體組織結構布種：Pique（珠地網眼）在梭織中指縱向畝條、在圓編針織中指利用成圈與集圈（Tuck）交錯形成蜂巢狀透氣網眼，為經典 Polo 衫面料（主力採用 75D/72F 與 150D/48F 定型紗）；Ottoman（奧圖曼）利用經細緯粗（如 75D 經配 300D 緯）或經重平組織形成飽滿橫向羅紋畝條，適合女裝套裝與精品提袋；Dobby（多臂織物）利用 16–28 片綜框織出精緻幾何暗花。
+              <div class="glossary-seo-meta">SEO / Technical Index: Pique (Polo Honeycomb Mesh) | Ottoman (Ribbed Cross-Cord) | Dobby (16–28 Frames)</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="fabric" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-polar-fleece-spacer">
+              <span itemprop="name">Polar Fleece (搖粒絨/刷毛絨) & 3D Spacer Fabric (三明治立體透氣網布)</span>
+              <span class="glossary-cat-tag">布種與後加工 Fabric</span>
+            </dt>
+            <dd itemprop="description">
+              高機能針織與鞋材家飾面料：搖粒絨（Polar Fleece / Coral Fleece）以 150D/144F 超細丹尼或 150D/48F 屋麗紗（Woolly DTY）織成毛圈針織布後，經鋼絲起毛（Napping）、剪毛（Shearing）與搖粒蓬鬆整理，鎖住大量靜止空氣達成極致輕量保暖；3D 三明治網布（Spacer Mesh）利用雙針床經編或雙面機以 75D/150D DTY 作表底層、單絲作中間 X 型支撐層，廣泛用於運動跑鞋鞋面與汽車座椅。
+              <div class="glossary-seo-meta">SEO / Technical Index: 150D/144F Micro-Filament Fleece (Napping & Shearing) | 75D/150D/300D 3D Spacer Shoe Upper</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="fabric" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-suede-peachskin">
+              <span itemprop="name">Peach Skin (桃皮絨磨毛) & Faux Suede (仿麂皮超細纖維後加工)</span>
+              <span class="glossary-cat-tag">布種與後加工 Fabric</span>
+            </dt>
+            <dd itemprop="description">
+              高附加價值長纖後加工工藝（引用《梭織實務介紹》）：以微細丹尼 DTY（如 75D/72F、75D/144F 或 150D/144F）為緯紗織成高密緞紋或斜紋胚布，經鹼減量（Alkali Weight Reduction）開纖溶出微孔後，通過金剛砂皮磨毛機（Emerizing / Sanding）精密磨出 0.1–0.3 mm 極短絨毛，呈現如水蜜桃表皮或天然鹿皮（Suede）般細膩溫潤之奢華觸感。
+              <div class="glossary-seo-meta">SEO / Technical Index: Micro-Filament DTY (75D/72F, 150D/144F) + Alkali Reduction + Diamond-Sand Emerizing</div>
+            </dd>
+          </div>
+
+          <div class="glossary-term-item" data-glossary-cat="dty" itemscope itemprop="hasDefinedTerm" itemtype="https://schema.org/DefinedTerm">
+            <dt id="term-savon-de-marseille-craft">
+              <span itemprop="name">Le Savoir-Faire (馬賽皂大釜熟成 × 宇治茶道 × 今治驗布 × 翊豐鹿牌工藝憲章)</span>
+              <span class="glossary-cat-tag">假撚工程 DTY</span>
+            </dt>
+            <dd itemprop="description">
+              翊豐企業（YEAR FAWN, Est. 1987）汲取法國 1688 年馬賽皂皇家法令（純淨原料、大釜十日文火熟成、六面方塊鋼印認證）、日本宇治抹茶焙火溫控與今治毛巾五秒沉降驗布精神：堅持採用台灣一級石化聚合廠（南亞、中纖、力麗）純淨 POY 原絲，於日本村田 33H 假撚機 210°C 聯苯氣相熱箱恆溫熟成，並執行 100% 逐錠 M/K 染色與 Itemat Lab 交絡檢測，加蓋「鹿牌」A 級品認證印記。
+              <div class="glossary-seo-meta">SEO / Technical Index: 1987 Deer Brand Heritage Charter | Pure PET IV 0.645 + 210°C Vapor Heater + 100% M/K & Itemat QC</div>
+            </dd>
+          </div>
+        </dl>
+
+        <!-- 學術文獻、專業書籍與歷史圖檔引用出處總表 (Bibliography & Citations Registry) -->
+        <div class="savon-heritage-box" style="margin-top:42px;padding:28px 32px;" id="academic-citations-registry">
+          <span class="tech-tag tech-tag-cyan" style="margin-bottom:10px;display:inline-block;">ACADEMIC BIBLIOGRAPHY & ARCHIVAL CITATIONS · 學術文獻與歷史照片引用出處聲明</span>
+          <h3 style="font-size:1.3rem;color:#ffffff;font-weight:800;margin-bottom:14px;">本站引用之紡織專業書籍、政府研究簡報、國際專利與歷史檔案完整出處索引</h3>
+          <ul style="list-style:decimal;padding-left:22px;color:#cbd5e1;font-size:0.86rem;line-height:1.8;display:grid;grid-template-columns:1fr 1fr;gap:10px 28px;">
+            <li><strong>翊豐企業線西廠品管室 (2011–2015)</strong>：《DTY 批號設立編碼原則：5碼編立原則 (100.3.7)》、《翊豐 DTY 品質檢驗報告 (1040123v1)》、《日本村田 33H 開機日期單與批號紀錄 (101–103年)》，彰化縣線西鄉：翊豐企業股份有限公司內部歷史典藏檔案。</li>
+            <li><strong>黃元龍 (2014)</strong>：《聚酯/聚胺 加工絲交絡噴節介紹（含交絡節點顯微影像、TA1–TA9 交絡牢度公式與德國 Enka Tecnica Itemat Lab TSI 測試圖譜）》，彰化：力麗企業股份有限公司彰化一廠品管課技術教材（翊豐企業 2014 典藏）。</li>
+            <li><strong>鄧永順 (2003)</strong>：《高科技紡織開發與輔導計畫：梭織實務介紹（含 H420 整經機、轉鼓併經機、單紗漿紗機、德國 DORNIER 與義大利 Somet/VAMATEX 劍桅織機實景及織物組織分類）》，台北：經濟部工業局主辦／財團法人中國紡織工業研究中心（紡織產業綜合研究所 TTRI）執行簡報（民國 92 年 10 月 8 日）。</li>
+            <li><strong>南亞塑膠工業股份有限公司纖維事業部 (2015)</strong>：《POY 品質檢驗報告表 (Partially Orientated Yarn Certificate of Analysis, Lot 42463)》，台北：南亞塑膠纖維事業部（翊豐企業 2015 原料入廠典藏）。</li>
+            <li><strong>龍海如 主編 (2004)</strong>：《針織學（Knitting Technology）》，北京：中國紡織出版社（東華大學國家級重點教材，出自《翊豐舊資料/專業-紗/ZZ5_《针织学》龙海如.pdf》）。</li>
+            <li><strong>國際環保紡織協會 (OEKO-TEX® Association)</strong>：《OEKO-TEX® Standard 100 測試程序與一般及特殊條款（CNS 繁體中文版）》，蘇黎世：Testex AG 瑞士紡織檢定有限公司（出自《翊豐舊資料/專業-紗/OEKO-Tex測試程序_cns.pdf》）。</li>
+            <li><strong>陳進來 編著</strong>：《假撚加工學（False-Twist Texturing Engineering）》與《聚酯加工絲實務》，台北：紡織工業叢書 / 大學紡織工程教材。</li>
+            <li><strong>Hearle, J. W. S., Hollick, L., & Wilson, D. K. (2001)</strong>：<em>Yarn Texturing Technology</em>, Cambridge: Woodhead Publishing / The Textile Institute (ISBN 978-1-85573-575-0).</li>
+            <li><strong>Finlayson, D., & Happe, E. L. (1933)</strong>：<em>Improvements in or relating to the Crêping or Crimping of Textile Threads (False-Twist Principle)</em>, British Celanese Ltd., UK Patent GB424,880.</li>
+            <li><strong>彰化縣文化局 / 吳連賞</strong>：《彰化縣紡織產業文化資產調查研究 — 線西、和美、伸港、鹿港與社頭百年紡織聚落演進史》暨《台灣工業發展過程與環境變遷》，彰化縣政府文獻典藏。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+</main>
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-col">
@@ -662,7 +1652,7 @@
     </div>
     <div class="container footer-bottom">
       <span data-i18n="footer.copyright">© 1987–2026 YEAR FAWN ENTERPRISE CO., LTD. 翊豐企業股份有限公司 All Rights Reserved.</span>
-      <span class="mono">MULTI-PAGE ARCHITECTURE · ZH-TW · EN · JA · ES · TH · VI</span>
+      <span class="mono">9-LANGUAGE GLOBAL EDITION · ZH-TW · EN · JA · KO · FR · IT · ES · TH · VI</span>
     </div>
   </footer>
 
@@ -682,5 +1672,123 @@
 
   <script src="i18n.js"></script>
   
+
+  <!-- 博物館典藏圖鑑高解析放大檢視燈箱 (Archive Lightbox Modal) -->
+  <div class="archive-lightbox" id="archive-lightbox" role="dialog" aria-modal="true" aria-label="Archival Plate Viewer" onclick="if(event.target===this) window.closeArchiveLightbox()">
+    <div class="archive-lightbox-inner">
+      <img id="archive-lightbox-img" src="assets/gallery/archive-dty-5code-system.jpg" alt="Archival Plate Full View" />
+      <div class="archive-lightbox-bar">
+        <div id="archive-lightbox-caption" style="font-size:0.9rem;color:#f8fafc;font-weight:600;"></div>
+        <button type="button" class="archive-lightbox-close" onclick="window.closeArchiveLightbox()">關閉檢視 (ESC)</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    // 翊豐 DTY 五碼批號互動解碼器 (100.3.7 規範)
+    window.updateBatchDecoder = function() {
+      var c1 = document.getElementById('dec-code1');
+      var c2 = document.getElementById('dec-code2');
+      var c3 = document.getElementById('dec-code3');
+      var c45 = document.getElementById('dec-code45');
+      var outCode = document.getElementById('dec-output-code');
+      var outDesc = document.getElementById('dec-output-desc');
+      if (!c1 || !c2 || !c3 || !c45 || !outCode || !outDesc) return;
+      var v1 = c1.value, v2 = c2.value, v3 = c3.value, v45 = c45.value;
+      var d1 = c1.options[c1.selectedIndex].getAttribute('data-desc');
+      var den = c2.options[c2.selectedIndex].getAttribute('data-den');
+      var fil = c3.options[c3.selectedIndex].getAttribute('data-fil');
+      var grd = c45.options[c45.selectedIndex].getAttribute('data-grade');
+      var ply = ['N','P','Q','R'].indexOf(v1) !== -1 ? '2/N (雙股無扭)' : (v45 === '0S' ? '1/S (單股S撚)' : '1/Z (單股Z撚)');
+      outCode.textContent = '#' + v1 + v2 + v3 + v45;
+      outDesc.textContent = '生產規格：' + den + ' / ' + fil + ' ' + d1 + ' ｜ 品管等級：' + grd + ' ｜ 廠內簡記：' + den.replace('D','') + '/' + fil.replace('F','') + '/' + ply;
+    };
+
+    // 40+ 條目紡織專業辭典即時搜尋與分類篩選
+    window._activeGlossaryCat = 'all';
+    window.setGlossaryCat = function(cat, btn) {
+      window._activeGlossaryCat = cat;
+      var btns = document.querySelectorAll('.glossary-filter-btn');
+      for (var i = 0; i < btns.length; i++) btns[i].classList.remove('active');
+      if (btn) btn.classList.add('active');
+      window.filterGlossary();
+    };
+    window.filterGlossary = function() {
+      var input = document.getElementById('glossary-search-input');
+      var q = input ? input.value.trim().toLowerCase() : '';
+      var cat = window._activeGlossaryCat || 'all';
+      var items = document.querySelectorAll('.glossary-term-item');
+      for (var i = 0; i < items.length; i++) {
+        var el = items[i];
+        var itemCat = el.getAttribute('data-glossary-cat');
+        var text = el.textContent.toLowerCase();
+        var matchCat = (cat === 'all' || itemCat === cat);
+        var matchQ = (!q || text.indexOf(q) !== -1);
+        el.style.display = (matchCat && matchQ) ? '' : 'none';
+      }
+    };
+
+    // 博物館典藏圖鑑燈箱放大檢視
+    window.openArchiveLightbox = function(src, caption) {
+      var modal = document.getElementById('archive-lightbox');
+      var img = document.getElementById('archive-lightbox-img');
+      var cap = document.getElementById('archive-lightbox-caption');
+      if (!modal || !img) return;
+      img.src = src;
+      if (cap) cap.textContent = caption || '';
+      modal.classList.add('open');
+    };
+    window.closeArchiveLightbox = function() {
+      var modal = document.getElementById('archive-lightbox');
+      if (modal) modal.classList.remove('open');
+    };
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') window.closeArchiveLightbox();
+    });
+  </script>
+
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "為什麼 POY 半延伸原絲必須經過「延伸假撚（Draw Texturing）」才能變成 DTY 加工絲？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "POY（Partially Oriented Yarn）以 3,200 m/min 紡絲時結晶度僅約 25%、斷裂伸度高達 126%（南亞 POY 實測）、沸水收縮率高達 50–60%，且在室溫存放 3–6 個月會發生物理老化，直接織布下水染色會劇烈收縮崩解且呈現刺眼塑膠反光。透過翊豐企業日本村田 33H 高速假撚機進行 1.68x 熱拉伸、18,000 RPM 三軸摩擦加撚、210°C 氣相熱定型與空氣噴節交絡轉化為 DTY 後，結晶度提升至 52%、斷裂強度提升至 4.72 g/den、伸度穩定在 22.5%、沸水收縮率降至 3.5% 以下，並具備 24.3% 伸縮復原率與免上漿高速織造能力。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "聚酯加工絲（DTY）的上游石化原料與聚合反應製程為何？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "上游聚酯（PET）由原油分餾石腦油（Naphtha），提煉對二甲苯（PX）氧化製成高純度對苯二甲酸（PTA ≥99.98%），並由乙烯製備纖維級乙二醇（MEG）。PTA 與 MEG 以 1:1.18 莫耳比於 255°C 直接酯化生成雙羥乙基對苯二甲酸酯（BHET），再於 285°C、高真空（<1 mbar）及催化劑作用下進行熔融縮聚反應，控制特性黏度 IV = 0.645 ± 0.012 dL/g、端羧基 -COOH ≤ 26 eq/10⁶g，並添加銳鈦礦型二氧化鈦（TiO₂）調控大有光（BR）、半消光（SD 0.30%）或全消光（FD 2.20%），最後經 3,200 m/min 高速紡絲製成 POY 原絲。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "台灣紡織產業的五階垂直分工體系為何？翊豐企業扮演什麼角色？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "台灣紡織業由五大階層緊密協作：第一階（Tier 1）為上游石化聚合與 POY 原絲大廠（如南亞、中纖 CMFC、力麗、遠東新、宏洲、紡安）；第二階（Tier 2）為中游關鍵樞紐—翊豐企業股份有限公司（1987 創立，彰化線西一廠與鹿港二廠），以日本村田 33H 假撚機將標準 POY 客製轉化為 75丹、100丹、150丹、300丹之定型紗、屋麗紗與噴節紗；第三階（Tier 3）為彰化平織（線西/和美）、針織（伸港/秀水）、織襪（社頭）與窄幅織帶（鹿港）聚落；第四階（Tier 4）為 130°C 高溫染整、磨毛與刷毛後加工；第五階（Tier 5）為全球運動戶外成衣、鞋材與家飾品牌。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "什麼是 DTY 交絡噴節牢度（TA1–TA9）與翊豐五碼批號編碼原則？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "交絡牢度（Interlace Retention Stability）由德國 Enka Tecnica Itemat Lab 儀器測定，公式為 [(每米原交絡節數 - 延伸後脫節數) ÷ 每米原交絡節數] × 100%，代號 TA1（0–15%）至 TA5（46–55%，節點較鬆弛、手感極柔軟）至 TA9（86–95%，節點緊密不脫節、免上漿經紗專用）。翊豐五碼批號（100.3.7 規範）第一碼代表單雙股與噴節/定型（A~V），第二碼代表丹尼數（1=30D 至 8=600D），第三碼代表單絲條數（1=24F 至 9=288F），第四五碼為流水號與等級/撚向。"
+        }
+      }
+    ]
+  }
+  </script>
+
 </body>
 </html>

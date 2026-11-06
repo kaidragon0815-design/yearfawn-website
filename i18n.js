@@ -776,3 +776,44 @@ setLanguage = function(lang) {
     window.updateDTY3DStageLang();
   }
 };
+
+// 跨頁面語系記憶 (localStorage + URL ?lang=) 與跨頁面產品規格帶入 (contact.html?spec=)
+(function initMultiPageEnhancements() {
+  const origSetLang = setLanguage;
+  setLanguage = function(lang) {
+    try { localStorage.setItem("yf_lang", lang); } catch (e) {}
+    origSetLang(lang);
+  };
+
+  window.selectProductForQuote = function(specIdxOrText) {
+    const sel = document.getElementById("q-spec");
+    const quoteSec = document.getElementById("quote");
+    if (sel && quoteSec) {
+      if (typeof specIdxOrText === "number" && sel.options[specIdxOrText]) {
+        sel.selectedIndex = specIdxOrText;
+      }
+      quoteSec.scrollIntoView({ behavior: "smooth" });
+    } else {
+      const idx = typeof specIdxOrText === "number" ? specIdxOrText : 0;
+      const curLang = document.documentElement.getAttribute("data-lang") || "zh-TW";
+      window.location.href = `contact.html?lang=${encodeURIComponent(curLang)}&spec=${idx}`;
+    }
+  };
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    const urlLang = params.get("lang");
+    let savedLang = null;
+    try { savedLang = localStorage.getItem("yf_lang"); } catch (e) {}
+    const targetLang = (urlLang && I18N_DATA[urlLang]) ? urlLang : (savedLang && I18N_DATA[savedLang] ? savedLang : null);
+    if (targetLang) {
+      setLanguage(targetLang);
+    }
+
+    const specIdx = params.get("spec");
+    const sel = document.getElementById("q-spec");
+    if (specIdx !== null && sel && sel.options[parseInt(specIdx, 10)]) {
+      sel.selectedIndex = parseInt(specIdx, 10);
+    }
+  });
+})();

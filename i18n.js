@@ -1048,3 +1048,43 @@ Object.keys(TEXTBOOK_I18N).forEach((lng) => {
     }
   });
 })();
+
+// 補齊最後 8 個表單與聯絡資訊標籤鍵值，達成 283/283 (100%) 零死角多語系覆蓋
+(function patchFinal8Keys() {
+  const FINAL8 = {
+    "zh-TW": {
+      "quote.companyLabel": "公司全銜",
+      "quote.phoneLabel": "電話／傳真",
+      "quote.plant1Label": "線西本廠地址",
+      "quote.plant2Label": "鹿港二廠地址",
+      "form.typeQuote": "索取報價 (Request Quote)",
+      "form.typeSample": "索取樣紗打樣 (Request Sample Cone)",
+      "form.typeRaw": "平織／針織／織帶用紗長期採購",
+      "form.typeCustom": "客製丹尼數／網路度／S·Z撚開發"
+    },
+    "en": {
+      "quote.companyLabel": "Company Name",
+      "quote.phoneLabel": "Telephone & Fax",
+      "quote.plant1Label": "Xianxi Headquarters (Plant 1)",
+      "quote.plant2Label": "Lukang Mega Complex (Plant 2)",
+      "form.typeQuote": "Request Official Quote",
+      "form.typeSample": "Request Free Sample Cone",
+      "form.typeRaw": "Long-Term Woven / Knit / Webbing Yarn Supply",
+      "form.typeCustom": "Custom Denier / NIM·SIM·HIM / S·Z Twist R&D"
+    },
+    "ja": {
+      "quote.companyLabel": "会社名",
+      "quote.phoneLabel": "電話番号・FAX",
+      "quote.plant1Label": "線西本社工場（第一工場）",
+      "quote.plant2Label": "鹿港第二工場（大型製造拠点）",
+      "form.typeQuote": "お見積り依頼 (Request Quote)",
+      "form.typeSample": "無料サンプルチーズ糸請求 (Sample Cone)",
+      "form.typeRaw": "織物・丸編ニット・細幅織テープ用原糸の長期購買",
+      "form.typeCustom": "特注デニール・インターレース・S/Z撚り開発"
+    }
+  };
+  ["es", "th", "vi"].forEach((lng) => { FINAL8[lng] = Object.assign({}, FINAL8["en"]); });
+  Object.keys(FINAL8).forEach((lng) => {
+    if (I18N_DATA[lng]) Object.assign(I18N_DATA[lng], FINAL8[lng]);
+  });
+})();

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.yearfawn.com.tw/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-TW" href="https://www.yearfawn.com.tw/?lang=zh-TW"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.yearfawn.com.tw/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.yearfawn.com.tw/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.yearfawn.com.tw/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://www.yearfawn.com.tw/?lang=th"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://www.yearfawn.com.tw/?lang=vi"/>
+  </url>
+</urlset>

@@ -1112,15 +1112,15 @@ Object.keys(TEXTBOOK_I18N).forEach((lng) => {
     "nav.polymer": "上游聚合與產業鏈",
     "nav.insights": "技術百科與辭典",
     "nav.facilities": "雙廠區與典藏館",
-    "savon.eyebrow": "LE SAVOIR-FAIRE DEPUIS 1987 · SAVON DE MARSEILLE × UJI MATCHA × IMABARI HERITAGE",
+    "savon.eyebrow": "TAIWAN DTY HERITAGE SINCE 1987 · DEER BRAND 鹿牌 · 台灣彰化紡織工藝傳承",
     "savon.title": "如法國百年馬賽皂之「大釜熟成與六面鋼印」：翊豐鹿牌 DTY 六大皇家工藝印記",
     "savon.desc": "1688 年法國路易十四頒布《柯爾貝爾敕令（Édit de Colbert）》，確立馬賽皂（Savon de Marseille — 如 Marius Fabre、Fer à Cheval、Rampal Latour）僅能以純淨植物油於大釜（Chaudron）中經十日文火皂化熟成，並於方塊六面烙印工坊鋼印；日本京都宇治茶師以焙火溫控凝鍊茶香、今治毛巾以「五秒沉降法」嚴格驗布。創立於 1987 年的翊豐企業（YEAR FAWN · 鹿牌），同樣以這份跨越世紀的職人敬畏，守護每一顆聚酯延伸假撚加工絲（DTY）。",
-    "savon.tag": "SCEAU D'AUTHENTICITÉ · 翊豐鹿牌六面品質印記 (EST. 1987)",
+    "savon.tag": "DEER BRAND QUALITY CHARTER · 翊豐鹿牌六大品質溯源準則 (EST. 1987)",
     "savon.subTitle": "從 285°C 聚合大釜到 210°C 聯苯氣相熱箱：純粹原料與精密火候的雙重淬鍊",
     "savon.subDesc": "正如正統馬賽皂拒絕任何合成雜質、全憑熬皂大師觀察釜中結晶紋理，翊豐企業自 1987 年於彰化線西建廠以來，堅持只選用台灣一級石化聚合廠（南亞、中纖 CMFC、力麗、宏洲、紡安）特性黏度 IV 0.645 ± 0.012 dL/g 之 A 級聚酯 POY 原絲，於日本村田機械（Murata 33H Mach Crimper）高速假撚機群中，以 ±0.3°C 氣相恆溫與 18,000 RPM 陶瓷摩擦盤施撚定型，最終蓋上象徵信譽的「鹿牌（Deer Brand）」印記。",
     "savon.cauldronCapTitle": "圖 I：285°C 高真空聚酯縮聚反應釜（Autoclave Reactor）與 TiO₂ 半消光聚酯酯粒（PET Chips）",
-    "savon.cauldronCapCite": "視覺典藏與引用說明：對照法國馬賽皂大釜皂化工藝與現代高分子聚酯 285°C 熔融縮聚製程（翊豐企業工藝美學館藏視覺，2026）",
-    "savon.cubeCapTitle": "圖 II：致敬法國馬賽皂六面鋼印 — 翊豐「鹿牌 (YEAR FAWN 1987)」皇家青銅印記與三大主力 DTY 筒紗",
+    "savon.cauldronCapCite": "圖檔來源與引用說明：上游高純度 PTA 與 MEG 經直接酯化與 285°C 高真空縮聚生成纖維級 PET 酯粒製程示意（翊豐企業高分子工程視覺典藏，2026）",
+    "savon.cubeCapTitle": "圖 II：翊豐彰化廠日本村田 Murata 33H 高速假撚機群與「鹿牌 (YEAR FAWN 1987)」A 級 DTY 筒紗",
     "savon.cubeCapCite": "圖檔引用與典藏出處：依據翊豐企業 1987 創立鹿頭標誌與 2012–2015 線西廠「鹿牌正常箱 (33KG)」包裝規範精修繪製",
     "savon.f1Title": "PUR PET 100%",
     "savon.f1Desc": "嚴選 PTA+MEG 純淨聚合，IV 0.645 dL/g、端羧基 ≤ 26 eq/10⁶g，零摻雜劣質回收料。",
@@ -1193,10 +1193,10 @@ Object.keys(TEXTBOOK_I18N).forEach((lng) => {
     "nav.polymer": "Polymerization & Supply Chain",
     "nav.insights": "Encyclopedia & Glossary",
     "nav.facilities": "Plants & Archive Museum",
-    "savon.eyebrow": "LE SAVOIR-FAIRE DEPUIS 1987 · SAVON DE MARSEILLE × UJI MATCHA × IMABARI HERITAGE",
+    "savon.eyebrow": "TAIWAN DTY HERITAGE SINCE 1987 · DEER BRAND 鹿牌 · 台灣彰化紡織工藝傳承",
     "savon.title": "Inspired by French Savon de Marseille Cauldron Mastery & 6-Sided Royal Stamp: Year Fawn's 6 Artisan Seals",
     "savon.desc": "Just as the 1688 Edict of Colbert decreed that authentic Savon de Marseille (Marius Fabre, Fer à Cheval, Rampal Latour) be saponified in master cauldrons and stamped on all six cube faces—and just as Uji tea masters guard roasting temperatures and Imabari towels enforce the 5-second sink test—Year Fawn Enterprise (Est. 1987, Deer Brand 鹿牌) upholds six uncompromising artisan seals for every bobbin of Polyester DTY.",
-    "savon.tag": "SCEAU D'AUTHENTICITÉ · DEER BRAND 6-SIDED QUALITY SEAL (EST. 1987)",
+    "savon.tag": "DEER BRAND QUALITY CHARTER · SIX PILLARS OF TRACEABILITY (EST. 1987)",
     "savon.subTitle": "From 285°C Polymerization Autoclaves to 210°C Biphenyl Vapor Heaters: Pure Polymer & Precision Thermal Craft",
     "savon.subDesc": "Since 1987 in Changhua, Taiwan, Year Fawn selects only A-grade POY feedstock (IV 0.645 ± 0.012 dL/g) from premier Taiwanese petrochemical polymer plants (Nan Ya, CMFC, Lealea, Hung Chou, Fang An), texturing on Japanese Murata 33H Mach Crimpers at ±0.3°C vapor uniformity and 18,000 RPM ceramic friction spindles under the trusted 'Deer Brand' seal.",
     "savon.cauldronCapTitle": "Plate I: 285°C High-Vacuum PET Polycondensation Autoclave & Semi-Dull TiO₂ Polyester Chips",
@@ -1280,7 +1280,7 @@ Object.keys(TEXTBOOK_I18N).forEach((lng) => {
     "nav.polymer": "上流重合・産業構造",
     "nav.insights": "技術百科・用語辞典",
     "nav.facilities": "工場設備・アーカイブ館",
-    "savon.title": "仏マルセイユ石鹸の「大釜熟成と六面刻印」に学ぶ：翊豊「鹿牌（ディアブランド）」DTY六大職人憲章",
+    "savon.title": "1987年創業「一糸入魂」の継承：翊豊「鹿牌（ディアブランド）」DTY 六大品質管理基準",
     "poly.pageTitle": "上流PET重合工学・なぜPOYを仮撚してDTYにするのか・台湾繊維産業の5段階分業体制",
     "poly.title": "上流原料重合ディープガイド：原油精製・PTA+MEGエステル化・285°C重縮合からPOY原糸誕生まで",
     "whydty.title": "なぜPOY原糸はそのまま織れないのか？POYからDTYへ変貌する6つの高分子物理・織造工学メカニズム",
@@ -1310,7 +1310,7 @@ Object.keys(TEXTBOOK_I18N).forEach((lng) => {
     "hero.ctaTertiary": "Explorer la Gamme 75D–300D",
     "hero.emblemSub": "Référence Taïwanaise du Fil Polyester DTY depuis 1987",
     "savon.eyebrow": "LE SAVOIR-FAIRE DEPUIS 1987 · HÉRITAGE SAVON DE MARSEILLE × UJI MATCHA × IMABARI",
-    "savon.title": "Inspiré par le Chaudron et le Sceau à 6 Faces du Savon de Marseille : Les 6 Sceaux d'Authenticité Year Fawn",
+    "savon.title": "Près de 40 Ans d'Excellence Filamentaire : Les 6 Piliers Qualité DTY Year Fawn « Marque du Cerf »",
     "savon.desc": "Tout comme l'Édit de Colbert de 1688 exigeait que le véritable Savon de Marseille (Marius Fabre, Fer à Cheval, Rampal Latour) soit saponifié au chaudron pendant dix jours et estampillé sur ses six faces, Year Fawn (Fondé en 1987, Marque du Cerf) perpétue six règles d'or artisanales pour chaque bobine de fil polyester DTY.",
     "savon.subTitle": "De l'Autoclave de Polycondensation à 285 °C au Four Vapeur Biphényle à 210 °C : Pureté & Maîtrise du Feu",
     "poly.pageTitle": "Polymérisation Amont du PET · Pourquoi Texturer le POY en DTY · Écosystème Textile à 5 Niveaux",
@@ -1347,7 +1347,7 @@ Object.keys(TEXTBOOK_I18N).forEach((lng) => {
     "hero.ctaTertiary": "Esplora Titoli 75D–300D",
     "hero.emblemSub": "Eccellenza Taiwanese nei Filati Poliestere DTY dal 1987",
     "savon.eyebrow": "ARTE MANIFATTURIERA DAL 1987 · TRADIZIONE SAVON DE MARSEILLE × UJI MATCHA × IMABARI",
-    "savon.title": "Come la Cottura in Caldaia e il Timbro a 6 Facce del Sapone di Marsiglia: I 6 Sigilli Artigianali Year Fawn",
+    "savon.title": "Quasi 40 Anni di Maestria nel Filato: I 6 Pilastri di Qualità DTY Year Fawn «Deer Brand»",
     "savon.subTitle": "Dall'Autoclave di Policondensazione a 285 °C ai Forni a Vapore Difenile a 210 °C: Purezza e Controllo Termico",
     "poly.pageTitle": "Polimerizzazione PET a Monte · Perché Testurizzare il POY in DTY · Filiera Tessile a 5 Livelli",
     "poly.title": "Enciclopedia della Polimerizzazione a Monte: Dal Petrolio Greggio, PTA+MEG e Policondensazione (285 °C) al POY",
@@ -1382,8 +1382,8 @@ Object.keys(TEXTBOOK_I18N).forEach((lng) => {
     "hero.ctaSecondary": "3D 가연 방사 공정 시뮬레이션 실행",
     "hero.ctaTertiary": "75D–300D 제품 규격표 보기",
     "hero.emblemSub": "1987년 창업 · 대만 대표 정밀 폴리에스터 가공사 브랜드",
-    "savon.eyebrow": "LE SAVOIR-FAIRE DEPUIS 1987 · 마르세유 비누 × 우지 말차 × 이마바리 타월 장인정신",
-    "savon.title": "프랑스 100년 마르세유 비누의 '대형 가마 숙성과 6면 각인'처럼: 익풍 사슴표(鹿牌) DTY 6대 품질 인장",
+    "savon.eyebrow": "TAIWAN DTY HERITAGE SINCE 1987 · 사슴표(鹿牌) · 대만 장화 섬유 장인 헌장",
+    "savon.title": "1987년 창업 '일사입혼(一糸入魂)'의 전승: 익풍 '사슴표(Deer Brand)' DTY 6대 품질관리 기준",
     "savon.subTitle": "285°C 중합 오토클레이브에서 210°C 비페닐 기상 히터까지: 순수 원료와 정밀 온도 제어의 결정체",
     "poly.pageTitle": "상류 PET 원료 중합 공학 · 왜 POY를 가연하여 DTY로 만드는가 · 대만 섬유 5단계 분업 생태계",
     "poly.title": "상류 원료 중합 심층 백과: 원유 정제, PTA+MEG 에스테르화 및 285°C 축중합에서 POY 원사 탄생까지",
@@ -1403,3 +1403,114 @@ Object.keys(TEXTBOOK_I18N).forEach((lng) => {
     I18N_DATA[lng] = Object.assign({}, I18N_DATA["en"], I18N_DATA[lng]);
   });
 })();
+
+
+// Authentic 1987 Deer Brand Craft Charter & Traceability Overrides (No soap/steel stamp analogies)
+(function() {
+  var charterOverrides = {
+    "zh-TW": {
+      "savon.eyebrow": "TAIWAN DTY HERITAGE SINCE 1987 · DEER BRAND 鹿牌 · 台灣彰化紡織工藝傳承",
+      "savon.title": "傳承自 1987 的一糸入魂：翊豐「鹿牌 (Deer Brand)」DTY 六大工藝品管準則",
+      "savon.desc": "創立於 1987 年（民國 76 年）的翊豐企業股份有限公司（YEAR FAWN ENTERPRISE CO., LTD.），見證台灣彰化從傳統紡織聚落邁向全球高機能化學纖維王國的近四十年歷史。我們以日本宇治茶道對焙火溫控的極致講究、今治毛巾（Imabari Towel）以「五秒沉降法」嚴格驗布的科學精神，從上游聚酯聚合純度、日本村田 33H 氣相熱箱恆溫定型、德國 Itemat 雷射交絡檢測，到獨創的「100.3.7 五碼批號與紙管色標溯源系統」，為全球平織與針織大廠守護每一顆「鹿牌」聚酯延伸假撚加工絲（DTY）。",
+      "savon.tag": "DEER BRAND QUALITY CHARTER · 翊豐鹿牌六大品質溯源準則 (EST. 1987)",
+      "savon.subTitle": "從 285°C 高真空聚酯縮聚反應釜到 210°C 聯苯氣相熱箱：純粹原料與精密火候的雙重淬鍊",
+      "savon.subDesc": "翊豐企業自 1987 年深耕彰化線西一廠與鹿港二廠以來，堅持只選用台灣一級石化聚合廠（南亞塑膠、中纖 CMFC、力麗、宏洲、紡安、樺良）特性黏度 IV 0.645 ± 0.012 dL/g 之 A 級聚酯 POY 原絲。於日本村田機械（Murata 33H Mach Crimper）高速假撚機群中，以 ±0.3°C 氣相恆溫與 18,000 RPM 三軸摩擦盤施撚定型，並透過嚴格的「紙管色環區分（如紫線管、素紅管、草綠管、雙紅線管）」、「五碼批號標籤」與「鹿牌（Deer Brand）33KG 標準外銷紙箱」，確保單批數萬米織造零混批、零色差。",
+      "savon.cauldronCapTitle": "圖 I：285°C 高真空聚酯縮聚反應釜（PET Autoclave Reactor）與 TiO₂ 半消光聚酯酯粒（PET Chips）",
+      "savon.cauldronCapCite": "圖檔來源與引用說明：上游高純度 PTA 與 MEG 經直接酯化與 285°C 高真空縮聚生成纖維級 PET 酯粒製程示意（翊豐企業高分子工程視覺典藏，2026）",
+      "savon.cubeCapTitle": "圖 II：翊豐彰化廠日本村田 Murata 33H 高速假撚機群與「鹿牌 (YEAR FAWN 1987)」A 級 DTY 筒紗",
+      "savon.cubeCapCite": "圖檔引用與典藏出處：依據翊豐企業 2012–2015 年廠內 Murata 33H（H-1 至 H-6 機台）生產紀錄與「鹿牌正常箱 (33KG)」紙管色標規範精修繪製",
+      "savon.f1Title": "A 級原生 PET 100%",
+      "poly.pageDesc": "從 285°C 高真空聚酯縮聚反應釜（PTA + MEG → BHET → PET IV 0.645 dL/g）到 210°C 日本村田 33H 聯苯氣相熱箱：結合翊豐企業 1987「鹿牌」工藝傳承與 2012–2015 實測檢驗檔案，完整解密台灣紡織供應鏈最核心的高分子科學。"
+    },
+    "en": {
+      "savon.eyebrow": "TAIWAN DTY HERITAGE SINCE 1987 · DEER BRAND 鹿牌 · ARTISAN TEXTURING CHARTER",
+      "savon.title": "Nearly Four Decades of Single-Filament Mastery: Year Fawn 'Deer Brand' Six Pillars of DTY Quality",
+      "savon.desc": "Founded in 1987 in Changhua, Taiwan, YEAR FAWN ENTERPRISE CO., LTD. embodies nearly forty years of Taiwan's synthetic fiber excellence. Combining Uji tea-roasting thermal discipline and Imabari Towel's 5-second scientific verification ethos, we safeguard every bobbin of 'Deer Brand' Polyester DTY—from upstream PET polymerization purity and Murata 33H vapor-phase heat-setting to German Itemat laser interlacing QC and our 100.3.7 5-digit batch & color-coded tube traceability system.",
+      "savon.tag": "DEER BRAND QUALITY CHARTER · SIX PILLARS OF TRACEABILITY (EST. 1987)",
+      "savon.subTitle": "From 285°C High-Vacuum Polycondensation Autoclaves to 210°C Biphenyl Vapor Heaters: Pure Polymer & Precision Thermal Craft",
+      "savon.subDesc": "Since establishing our Xianxi and Lukang plants in 1987, Year Fawn selects only A-grade POY feedstock (IV 0.645 ± 0.012 dL/g) from premier Taiwanese petrochemical polymerizers (Nan Ya, CMFC, Lealea, Hung Chou, Fang An). Processed on Japanese Murata 33H Mach Crimper lines at ±0.3°C isothermal stability and 18,000 RPM friction twisting, every lot is tracked via color-coded paper tubes, 5-digit batch codes, and 33KG 'Deer Brand' export cartons.",
+      "savon.cauldronCapTitle": "Plate I: 285°C High-Vacuum PET Polycondensation Autoclave & Semi-Dull TiO₂ Polyester Chips",
+      "savon.cauldronCapCite": "Visual Citation: Upstream high-purity PTA & MEG direct esterification and 285°C melt polycondensation into fiber-grade PET chips (Year Fawn Polymer Engineering Archive, 2026)",
+      "savon.cubeCapTitle": "Plate II: Year Fawn Changhua Plant Murata 33H Mach Crimper Hall & 'Deer Brand (1987)' Grade-A DTY Bobbins",
+      "savon.cubeCapCite": "Archival Source: Based on Year Fawn's 2012–2015 Murata 33H (H-1 to H-6) production logs & 'Deer Brand 33KG Carton' color-coded bobbin standards",
+      "savon.f1Title": "100% Grade-A PET",
+      "poly.pageDesc": "From 285°C high-vacuum PET polycondensation autoclaves (PTA + MEG → BHET → PET IV 0.645 dL/g) to 210°C Murata 33H vapor heaters: uniting Year Fawn's 1987 'Deer Brand' heritage with 2012–2015 empirical lab COAs."
+    },
+    "ja": {
+      "savon.eyebrow": "TAIWAN DTY HERITAGE SINCE 1987 · 鹿牌（ディアブランド） · 台湾彰化テキスタイル職人憲章",
+      "savon.title": "1987年創業「一糸入魂」の継承：翊豊「鹿牌（ディアブランド）」DTY 六大品質管理基準",
+      "savon.desc": "1987年（民国76年）に台湾・彰化で創業した翊豊企業（YEAR FAWN）は、宇治茶道の火入れ温度管理と今治タオルの「5秒沈降法」に通じる科学的品質検証を実践。上流PET重合純度、村田機械33H気相ヒーター定型、独Itemat交絡検査、独自の「100.3.7五桁ロット番号＆紙管色別トレーサビリティ」で最高品質のDTY加工糸を供給します。",
+      "savon.subTitle": "285°C 高真空PET縮重合反応釜から 210°C ビフェニル気相ヒーターへ：純粋原料と精密温度制御の結晶"
+    },
+    "ko": {
+      "savon.eyebrow": "TAIWAN DTY HERITAGE SINCE 1987 · 사슴표(鹿牌) · 대만 장화 섬유 장인 헌장",
+      "savon.title": "1987년 창업 '일사입혼(一糸入魂)'의 전승: 익풍 '사슴표(Deer Brand)' DTY 6대 품질관리 기준",
+      "savon.desc": "1987년 대만 장화에서 설립된 익풍기업(YEAR FAWN)은 우지 말차의 정밀한 온도 제어와 이마바리 타월의 5초 침강 시험 정신을 계승하여, 상류 PET 중합 순도 관리, 일본 무라타 33H 기상 히터 열세팅, 독일 Itemat 인터레이스 전수 검사, 그리고 '100.3.7 5자리 로트 번호 및 지관 색상 추적 시스템'으로 무결점 DTY 가연사를 공급합니다.",
+      "savon.subTitle": "285°C 고진공 PET 축중합 반응기에서 210°C 비페닐 기상 히터까지: 순수 원료와 정밀 열제어의 결정체"
+    },
+    "fr": {
+      "savon.eyebrow": "PATRIMOINE TEXTILE DEPUIS 1987 · MARQUE DU CERF (鹿牌) · CHARTE ARTISANALE DTY",
+      "savon.title": "Près de 40 Ans d'Excellence Filamentaire : Les 6 Piliers Qualité DTY Year Fawn « Marque du Cerf »",
+      "savon.desc": "Fondée en 1987 à Changhua (Taïwan), YEAR FAWN ENTERPRISE CO., LTD. allie la rigueur thermique des maîtres de thé d'Uji et la certification scientifique d'Imabari : pureté de polycondensation PET (IV 0,645 dL/g), texturation sur métiers japonais Murata 33H à 210 °C, contrôle laser Itemat Lab et traçabilité intégrale par code lot à 5 chiffres (norme 100.3.7) et tubes colorés.",
+      "savon.subTitle": "De l'Autoclave de Polycondensation sous Vide à 285 °C au Four Vapeur Biphényle à 210 °C : Pureté & Maîtrise Thermique"
+    },
+    "it": {
+      "savon.eyebrow": "TRADIZIONE TESSILE DAL 1987 · DEER BRAND (鹿牌) · CARTA ARTIGIANALE DTY",
+      "savon.title": "Quasi 40 Anni di Maestria nel Filato: I 6 Pilastri di Qualità DTY Year Fawn «Deer Brand»",
+      "savon.desc": "Fondata nel 1987 a Changhua (Taiwan), YEAR FAWN ENTERPRISE CO., LTD. unisce il controllo termico dei maestri del tè di Uji e il rigore scientifico di Imabari: purezza del polimero PET (IV 0,645 dL/g), testurizzazione su macchine giapponesi Murata 33H a 210 °C, test laser Itemat Lab e tracciabilità totale tramite codice lotto a 5 cifre (100.3.7) e tubetti codificati a colori.",
+      "savon.subTitle": "Dall'Autoclave di Policondensazione Sottovuoto a 285 °C ai Forni a Vapore Difenile a 210 °C: Purezza e Precisione Termica"
+    }
+  };
+  if (typeof I18N_DATA !== "undefined") {
+    Object.keys(charterOverrides).forEach(function(lang) {
+      if (I18N_DATA[lang]) {
+        Object.assign(I18N_DATA[lang], charterOverrides[lang]);
+      }
+    });
+    ["es", "th", "vi", "ja", "ko", "fr", "it"].forEach(function(lang) {
+      if (I18N_DATA[lang]) {
+        ["savon.tag", "savon.subDesc", "savon.cauldronCapTitle", "savon.cauldronCapCite", "savon.cubeCapTitle", "savon.cubeCapCite", "savon.f1Title", "poly.pageDesc"].forEach(function(k) {
+          if (!charterOverrides[lang] || !charterOverrides[lang][k]) {
+            I18N_DATA[lang][k] = I18N_DATA["en"][k];
+          }
+        });
+      }
+    });
+  }
+})();
+
+
+(function() {
+  var mobileKeys = {
+    "zh-TW": { "mobile.polymerShort": "聚合/批號", "mobile.products": "紗種規格", "mobile.quote": "詢價/打樣" },
+    "en": { "mobile.polymerShort": "Polymer/Lot", "mobile.products": "DTY Specs", "mobile.quote": "Get Quote" },
+    "ja": { "mobile.polymerShort": "重合/ロット", "mobile.products": "DTY規格", "mobile.quote": "見積/サンプル" },
+    "ko": { "mobile.polymerShort": "중합/로트", "mobile.products": "DTY 규격", "mobile.quote": "견적/샘플" },
+    "fr": { "mobile.polymerShort": "Polymère", "mobile.products": "Spéc. DTY", "mobile.quote": "Devis" },
+    "it": { "mobile.polymerShort": "Polimero", "mobile.products": "Spec. DTY", "mobile.quote": "Preventivo" },
+    "es": { "mobile.polymerShort": "Polímero", "mobile.products": "Espec. DTY", "mobile.quote": "Cotizar" },
+    "th": { "mobile.polymerShort": "โพลีเมอร์", "mobile.products": "สเปค DTY", "mobile.quote": "ใบเสนอราคา" },
+    "vi": { "mobile.polymerShort": "Polyme", "mobile.products": "Quy cách", "mobile.quote": "Báo giá" }
+  };
+  if (typeof I18N_DATA !== "undefined") {
+    Object.keys(mobileKeys).forEach(function(l) {
+      if (I18N_DATA[l]) Object.assign(I18N_DATA[l], mobileKeys[l]);
+    });
+  }
+})();
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var mobileDrawer = document.getElementById("mobile-nav-drawer");
+  var mobileBtn = document.getElementById("mobile-menu-btn");
+  if (mobileDrawer && mobileBtn) {
+    mobileDrawer.querySelectorAll("[data-lang-btn]").forEach(function(btn) {
+      btn.addEventListener("click", function() {
+        setTimeout(function() {
+          mobileDrawer.setAttribute("hidden", "");
+          mobileBtn.setAttribute("aria-expanded", "false");
+        }, 120);
+      });
+    });
+  }
+});

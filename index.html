@@ -1191,7 +1191,7 @@
   <!-- 博物館典藏圖鑑高解析放大檢視燈箱 (Archive Lightbox Modal) -->
   <div class="archive-lightbox" id="archive-lightbox" role="dialog" aria-modal="true" aria-label="Archival Plate Viewer" onclick="if(event.target===this) window.closeArchiveLightbox()">
     <div class="archive-lightbox-inner">
-      <img id="archive-lightbox-img" src="assets/gallery/archive-dty-5code-system.jpg" alt="Archival Plate Full View" />
+      <img id="archive-lightbox-img" src="assets/gallery/archive-false-twist-mechanism.jpg" alt="Archival Plate Full View" />
       <div class="archive-lightbox-bar">
         <div id="archive-lightbox-caption" style="font-size:0.9rem;color:#f8fafc;font-weight:600;"></div>
         <button type="button" class="archive-lightbox-close" onclick="window.closeArchiveLightbox()">關閉檢視 (ESC)</button>
@@ -1201,25 +1201,6 @@
 
 
   <script>
-    // 翊豐 DTY 五碼批號互動解碼器 (100.3.7 規範)
-    window.updateBatchDecoder = function() {
-      var c1 = document.getElementById('dec-code1');
-      var c2 = document.getElementById('dec-code2');
-      var c3 = document.getElementById('dec-code3');
-      var c45 = document.getElementById('dec-code45');
-      var outCode = document.getElementById('dec-output-code');
-      var outDesc = document.getElementById('dec-output-desc');
-      if (!c1 || !c2 || !c3 || !c45 || !outCode || !outDesc) return;
-      var v1 = c1.value, v2 = c2.value, v3 = c3.value, v45 = c45.value;
-      var d1 = c1.options[c1.selectedIndex].getAttribute('data-desc');
-      var den = c2.options[c2.selectedIndex].getAttribute('data-den');
-      var fil = c3.options[c3.selectedIndex].getAttribute('data-fil');
-      var grd = c45.options[c45.selectedIndex].getAttribute('data-grade');
-      var ply = ['N','P','Q','R'].indexOf(v1) !== -1 ? '2/N (雙股無扭)' : (v45 === '0S' ? '1/S (單股S撚)' : '1/Z (單股Z撚)');
-      outCode.textContent = '#' + v1 + v2 + v3 + v45;
-      outDesc.textContent = '生產規格：' + den + ' / ' + fil + ' ' + d1 + ' ｜ 品管等級：' + grd + ' ｜ 廠內簡記：' + den.replace('D','') + '/' + fil.replace('F','') + '/' + ply;
-    };
-
     // 40+ 條目紡織專業辭典即時搜尋與分類篩選
     window._activeGlossaryCat = 'all';
     window.setGlossaryCat = function(cat, btn) {
@@ -1274,7 +1255,7 @@
         "name": "為什麼 POY 半延伸原絲必須經過「延伸假撚（Draw Texturing）」才能變成 DTY 加工絲？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "POY（Partially Oriented Yarn）以 3,200 m/min 紡絲時結晶度僅約 25%、斷裂伸度高達 126%（南亞 POY 實測）、沸水收縮率高達 50–60%，且在室溫存放 3–6 個月會發生物理老化，直接織布下水染色會劇烈收縮崩解且呈現刺眼塑膠反光。透過翊豐企業日本村田 33H 高速假撚機進行 1.68x 熱拉伸、18,000 RPM 三軸摩擦加撚、210°C 氣相熱定型與空氣噴節交絡轉化為 DTY 後，結晶度提升至 52%、斷裂強度提升至 4.72 g/den、伸度穩定在 22.5%、沸水收縮率降至 3.5% 以下，並具備 24.3% 伸縮復原率與免上漿高速織造能力。"
+          "text": "POY（Partially Oriented Yarn）以 3,200 m/min 紡絲時結晶度僅約 25%、斷裂伸度高達 126%（上游 POY 實測）、沸水收縮率高達 50–60%，且在室溫存放 3–6 個月會發生物理老化，直接織布下水染色會劇烈收縮崩解且呈現刺眼塑膠反光。透過翊豐企業日本村田 33H 高速假撚機進行 1.68x 熱拉伸、18,000 RPM 三軸摩擦加撚、210°C 氣相熱定型與空氣噴節交絡轉化為 DTY 後，結晶度提升至 52%、斷裂強度提升至 4.72 g/den、伸度穩定在 22.5%、沸水收縮率降至 3.5% 以下，並具備 24.3% 伸縮復原率與免上漿高速織造能力。"
         }
       },
       {
@@ -1290,15 +1271,15 @@
         "name": "台灣紡織產業的五階垂直分工體系為何？翊豐企業扮演什麼角色？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "台灣紡織業由五大階層緊密協作：第一階（Tier 1）為上游石化聚合與 POY 原絲大廠（如南亞、中纖 CMFC、力麗、遠東新、宏洲、紡安）；第二階（Tier 2）為中游關鍵樞紐—翊豐企業股份有限公司（1987 創立，彰化線西一廠與鹿港二廠），以日本村田 33H 假撚機將標準 POY 客製轉化為 75丹、100丹、150丹、300丹之定型紗、屋麗紗與噴節紗；第三階（Tier 3）為彰化平織（線西/和美）、針織（伸港/秀水）、織襪（社頭）與窄幅織帶（鹿港）聚落；第四階（Tier 4）為 130°C 高溫染整、磨毛與刷毛後加工；第五階（Tier 5）為全球運動戶外成衣、鞋材與家飾品牌。"
+          "text": "台灣紡織業由五大階層緊密協作：第一階（Tier 1）為上游石化聚合與 POY 原絲大廠（台灣一級石化與聚酯聚合大廠）；第二階（Tier 2）為中游關鍵樞紐—翊豐企業股份有限公司（1987 創立，彰化線西一廠與鹿港二廠），以日本村田 33H 假撚機將標準 POY 客製轉化為 75丹、100丹、150丹、300丹之定型紗、屋麗紗與噴節紗；第三階（Tier 3）為彰化平織（線西/和美）、針織（伸港/秀水）、織襪（社頭）與窄幅織帶（鹿港）聚落；第四階（Tier 4）為 130°C 高溫染整、磨毛與刷毛後加工；第五階（Tier 5）為全球運動戶外成衣、鞋材與家飾品牌。"
         }
       },
       {
         "@type": "Question",
-        "name": "什麼是 DTY 交絡噴節牢度（TA1–TA9）與翊豐五碼批號編碼原則？",
+        "name": "什麼是紡紗假撚的五種物理狀態、摩擦式假撚公式與 DTY 交絡噴節牢度（TA1–TA9）？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "交絡牢度（Interlace Retention Stability）由德國 Enka Tecnica Itemat Lab 儀器測定，公式為 [(每米原交絡節數 - 延伸後脫節數) ÷ 每米原交絡節數] × 100%，代號 TA1（0–15%）至 TA5（46–55%，節點較鬆弛、手感極柔軟）至 TA9（86–95%，節點緊密不脫節、免上漿經紗專用）。翊豐五碼批號（100.3.7 規範）第一碼代表單雙股與噴節/定型（A~V），第二碼代表丹尼數（1=30D 至 8=600D），第三碼代表單絲條數（1=24F 至 9=288F），第四五碼為流水號與等級/撚向。"
+          "text": "根據假撚動力學（參考 TESTEX 與 Hearle 理論），當紗線以速度 V 連續通過轉速 n 之假撚器且運轉時間 t 趨近無限大時，加撚熱定型區維持恆定高撚度 TA = n/V，而解撚輸出區殘餘撚度 TB 趨近於 0；三軸摩擦盤假撚器利用直徑比放大效應 TC = k(D/d)(n/V) 實現 1,000 m/min 以上高速加撚。交絡牢度（Interlace Retention Stability）則由德國 Enka Tecnica Itemat Lab 儀器測定，公式為 [(每米原交絡節數 - 延伸後脫節數) ÷ 每米原交絡節數] × 100%，代號涵蓋 TA1（0–15%）至 TA5（46–55%，手感柔軟）與 TA9（86–95%，免上漿高速經紗專用）。"
         }
       }
     ]

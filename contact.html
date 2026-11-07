@@ -323,7 +323,7 @@
   <!-- 博物館典藏圖鑑高解析放大檢視燈箱 (Archive Lightbox Modal) -->
   <div class="archive-lightbox" id="archive-lightbox" role="dialog" aria-modal="true" aria-label="Archival Plate Viewer" onclick="if(event.target===this) window.closeArchiveLightbox()">
     <div class="archive-lightbox-inner">
-      <img id="archive-lightbox-img" src="assets/gallery/archive-dty-5code-system.jpg" alt="Archival Plate Full View" />
+      <img id="archive-lightbox-img" src="assets/gallery/archive-false-twist-mechanism.jpg" alt="Archival Plate Full View" />
       <div class="archive-lightbox-bar">
         <div id="archive-lightbox-caption" style="font-size:0.9rem;color:#f8fafc;font-weight:600;"></div>
         <button type="button" class="archive-lightbox-close" onclick="window.closeArchiveLightbox()">關閉檢視 (ESC)</button>
@@ -333,25 +333,6 @@
 
 
   <script>
-    // 翊豐 DTY 五碼批號互動解碼器 (100.3.7 規範)
-    window.updateBatchDecoder = function() {
-      var c1 = document.getElementById('dec-code1');
-      var c2 = document.getElementById('dec-code2');
-      var c3 = document.getElementById('dec-code3');
-      var c45 = document.getElementById('dec-code45');
-      var outCode = document.getElementById('dec-output-code');
-      var outDesc = document.getElementById('dec-output-desc');
-      if (!c1 || !c2 || !c3 || !c45 || !outCode || !outDesc) return;
-      var v1 = c1.value, v2 = c2.value, v3 = c3.value, v45 = c45.value;
-      var d1 = c1.options[c1.selectedIndex].getAttribute('data-desc');
-      var den = c2.options[c2.selectedIndex].getAttribute('data-den');
-      var fil = c3.options[c3.selectedIndex].getAttribute('data-fil');
-      var grd = c45.options[c45.selectedIndex].getAttribute('data-grade');
-      var ply = ['N','P','Q','R'].indexOf(v1) !== -1 ? '2/N (雙股無扭)' : (v45 === '0S' ? '1/S (單股S撚)' : '1/Z (單股Z撚)');
-      outCode.textContent = '#' + v1 + v2 + v3 + v45;
-      outDesc.textContent = '生產規格：' + den + ' / ' + fil + ' ' + d1 + ' ｜ 品管等級：' + grd + ' ｜ 廠內簡記：' + den.replace('D','') + '/' + fil.replace('F','') + '/' + ply;
-    };
-
     // 40+ 條目紡織專業辭典即時搜尋與分類篩選
     window._activeGlossaryCat = 'all';
     window.setGlossaryCat = function(cat, btn) {
